@@ -21,13 +21,9 @@
 ### 👨‍💻 Executive Summary
 
 <div align="center">
-  <table>
-    <tr>
-      <td width="100%">
-        Business-minded multidisciplinary professional bridging corporate strategy, Artificial Intelligence, and Mechanical Engineering. I deliver measurable value through strategic planning, project management, and deploying AI models and data-driven solutions to optimize organizational efficiency. Adept at leveraging a unique blend of business leadership, technical acumen, alongside extensive HR and BIM expertise to deliver scalable, cross-functional innovations.
-      </td>
-    </tr>
-  </table>
+  <p>
+    Business-minded multidisciplinary professional bridging corporate strategy, Artificial Intelligence, and Mechanical Engineering. I deliver measurable value through strategic planning, project management, and deploying AI models and data-driven solutions to optimize organizational efficiency. Adept at leveraging a unique blend of business leadership, technical acumen, alongside extensive HR and BIM expertise to deliver scalable, cross-functional innovations.
+  </p>
 </div>
 
 ---
@@ -55,8 +51,8 @@
 
 <!-- START_BADGES -->
 <div align="center">
-  <img src="https://img.shields.io/badge/MBA-Global_Management-00529B?style=for-the-badge&logo=google-scholar&logoColor=white" />
-  <img src="https://img.shields.io/badge/MSc-Mechanical_Power_Engineering-00529B?style=for-the-badge&logo=google-scholar&logoColor=white" />
+  <img src="https://img.shields.io/badge/MBA-Global_Management-00529B?style=for-the-badge&logo=googlescholar&logoColor=white" />
+  <img src="https://img.shields.io/badge/MSc-Mechanical_Power_Engineering-00529B?style=for-the-badge&logo=googlescholar&logoColor=white" />
   <img src="https://img.shields.io/badge/Diploma-MEP_BIM_98%25-00A86B?style=for-the-badge&logo=autodesk&logoColor=white" />
   <img src="https://img.shields.io/badge/ITI-AI_&_Machine_Learning-FF0000?style=for-the-badge&logo=deeplearning.ai&logoColor=white" />
   <img src="https://img.shields.io/badge/U_of_Tokyo-Global_Consumer_Intelligence-002147?style=for-the-badge&logo=tokyo&logoColor=white" />
