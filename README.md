@@ -33,7 +33,7 @@
 <!-- START_TECH_STACK -->
 <div align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=aws,cpp,docker,html,postgres,py,tensorflow,ts&perline=14" />
+    <img src="https://skillicons.dev/icons?i=aws,bash,c,cmake,cpp,css,dart,docker,html,js,kotlin,postgres,py,ruby,swift,tensorflow,ts&perline=14" />
   </a>
 </div>
 <!-- END_TECH_STACK -->

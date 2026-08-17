@@ -1,30 +1,52 @@
 import os
 import json
 import urllib.request
+import urllib.error
 import re
+import time
 
 # File paths
 README_FILE = "README.md"
 CONFIG_FILE = "profile_config.json"
 
-# Map GitHub languages & topics to skillicons.dev identifiers
-ICON_MAP = {
-    "python": "py", "c++": "cpp", "typescript": "ts", "javascript": "js",
-    "html": "html", "css": "css", "dart": "dart", "jupyter notebook": "py",
-    "shell": "bash", "java": "java", "ruby": "rb", "go": "go",
-    "rust": "rs", "php": "php", "c#": "cs", "swift": "swift", "kotlin": "kotlin",
-    
-    # Common Topics
-    "fastapi": "fastapi", "docker": "docker", "flutter": "flutter", 
-    "react": "react", "postgresql": "postgres", "mysql": "mysql", 
-    "mongodb": "mongodb", "aws": "aws", "gcp": "gcp", 
-    "tensorflow": "tensorflow", "pytorch": "pytorch", 
-    "hadoop": "hadoop", "spark": "spark", "django": "django", 
-    "linux": "linux", "github": "github", "git": "git", "scikit-learn": "scikitlearn"
+VALID_SKILLICONS = {
+    "ableton", "activitypub", "actix", "adonis", "ae", "aiscript", "alpine", "anaconda", "androidstudio",
+    "angular", "ansible", "apollo", "apple", "appwrite", "arch", "arduino", "astro", "atom",
+    "au", "autocad", "aws", "azul", "azure", "babel", "bash", "bevy", "bitbucket", "blender",
+    "bootstrap", "bsd", "bun", "c", "cs", "cpp", "crystal", "cassandra", "clion", "clojure",
+    "cloudflare", "cmake", "codepen", "coffeescript", "craftjs", "css", "cypress", "d3",
+    "dart", "debian", "deno", "devto", "discord", "django", "docker", "dotnet", "dynamodb",
+    "eclipse", "elasticsearch", "electron", "elixir", "elysia", "emacs", "ember", "emotion",
+    "express", "fastapi", "fediverse", "figma", "firebase", "flask", "flutter", "forth", "fortran",
+    "gamemakerstudio", "gatsby", "gcp", "git", "github", "githubactions", "gitlab", "gmail",
+    "go", "godot", "golang", "gradle", "grafana", "graphql", "gtk", "gulp", "haskell", "haxe",
+    "haxeflixel", "heroku", "hibernate", "html", "htmx", "idea", "ai", "instagram", "ipfs",
+    "java", "js", "jenkins", "jest", "jquery", "julia", "kafka", "kali", "kotlin", "ktor",
+    "kubernetes", "laravel", "latex", "less", "linkedin", "linux", "lit", "lua", "mac",
+    "mariadb", "materialui", "matlab", "maven", "mint", "misskey", "mongodb", "mysql", "neovim",
+    "nestjs", "netlify", "nextjs", "nginx", "nim", "nix", "nodejs", "notion", "npm", "nuxtjs",
+    "obsidian", "ocaml", "octave", "opencv", "openshift", "openstack", "p5js", "perl", "ps",
+    "php", "phpstorm", "pinia", "pkl", "plan9", "planetscale", "pnpm", "postgres", "postman",
+    "powershell", "pr", "prettier", "prisma", "processing", "prometheus", "pug", "puppeteer",
+    "py", "pytorch", "qt", "r", "rabbitmq", "raspberrypi", "react", "reactivex", "redhat",
+    "redis", "redux", "regex", "remix", "replit", "rider", "robloxstudio", "rocket", "rollupjs",
+    "ros", "ruby", "rust", "sass", "spring", "sqlite", "stackoverflow", "styledcomponents",
+    "sublime", "supabase", "svelte", "svg", "swift", "symfony", "tailwind", "tauri", "tensorflow",
+    "terraform", "threejs", "tiktok", "tomcat", "ts", "ubuntu", "unity", "unreal", "v",
+    "vala", "vercel", "vim", "visualstudio", "vite", "vitest", "vscode", "vscodium", "vue",
+    "vuetify", "wasm", "webflow", "webpack", "webstorm", "windicss", "windows", "wordpress",
+    "workers", "xd", "yarn", "yew", "zig"
 }
 
-def fetch_repos(username):
-    url = f"https://api.github.com/users/{username}/repos?sort=updated&per_page=100"
+ICON_MAP = {
+    "python": "py", "jupyter notebook": "py", "c++": "cpp", "c#": "cs", "javascript": "js",
+    "typescript": "ts", "shell": "bash", "golang": "go", 
+    "postgresql": "postgres", "amazon-web-services": "aws", "google-cloud-platform": "gcp",
+    "microsoft-azure": "azure", "scikit-learn": "scikitlearn", "artificial-intelligence": "ai", 
+    "machine-learning": "ai", "deep-learning": "ai"
+}
+
+def fetch_github_api(url):
     headers = {}
     if "GITHUB_TOKEN" in os.environ:
         headers["Authorization"] = f"token {os.environ['GITHUB_TOKEN']}"
@@ -32,13 +54,34 @@ def fetch_repos(username):
     req = urllib.request.Request(url, headers=headers)
     try:
         with urllib.request.urlopen(req) as response:
-            repos = json.loads(response.read().decode())
+            return json.loads(response.read().decode())
+    except urllib.error.HTTPError as e:
+        print(f"HTTPError on {url}: {e}")
+        return None
     except Exception as e:
-        print(f"Error fetching repos: {e}")
+        print(f"Error fetching {url}: {e}")
+        return None
+
+def fetch_repos(username):
+    url = f"https://api.github.com/users/{username}/repos?sort=updated&per_page=100"
+    repos = fetch_github_api(url)
+    if not repos:
         return []
     
     # Filter out forks and profile repo
-    return [r for r in repos if not r['fork'] and r['name'] != username]
+    repos = [r for r in repos if not r['fork'] and r['name'] != username]
+    
+    # For each repo, fetch deep languages
+    for r in repos:
+        lang_url = r['languages_url']
+        r['all_languages'] = []
+        if lang_url:
+            langs = fetch_github_api(lang_url)
+            if langs:
+                r['all_languages'] = list(langs.keys())
+        time.sleep(0.2) # small delay to prevent rate limit spikes
+        
+    return repos
 
 def generate_badges_html(badges):
     html = '<div align="center">\n'
@@ -68,18 +111,22 @@ def generate_projects_markdown(repos):
 def generate_tech_stack_html(repos, extra_icons):
     icons = set(extra_icons)
     for r in repos:
-        # Extract Language
-        if r['language']:
-            lang_lower = r['language'].lower()
-            if lang_lower in ICON_MAP:
-                icons.add(ICON_MAP[lang_lower])
-        # Extract Topics
+        # Extract from all deep languages in the repo
+        for lang in r.get('all_languages', []):
+            lang_lower = lang.lower().replace(" ", "")
+            if lang_lower in VALID_SKILLICONS:
+                icons.add(lang_lower)
+            elif lang.lower() in ICON_MAP:
+                icons.add(ICON_MAP[lang.lower()])
+                
+        # Extract from topics
         for topic in r.get('topics', []):
-            topic_lower = topic.lower()
-            if topic_lower in ICON_MAP:
-                icons.add(ICON_MAP[topic_lower])
+            topic_lower = topic.lower().replace("-", "")
+            if topic_lower in VALID_SKILLICONS:
+                icons.add(topic_lower)
+            elif topic.lower() in ICON_MAP:
+                icons.add(ICON_MAP[topic.lower()])
     
-    # If no icons found, fallback to some defaults to avoid empty image
     if not icons:
         icons = {"py", "github", "git"}
         
