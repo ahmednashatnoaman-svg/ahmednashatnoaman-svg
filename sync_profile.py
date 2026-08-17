@@ -30,7 +30,8 @@ def fetch_top_repos(username):
 def generate_badges_html(badges):
     html = '<div align="center">\n'
     for b in badges:
-        img_url = f"https://img.shields.io/badge/{b['label']}-{b['message']}-{b['color']}?style=for-the-badge&logo={b['logo']}&logoColor={b['logoColor']}"
+        labelColor = b.get('labelColor', '1F2335')
+        img_url = f"https://img.shields.io/badge/{b['label']}-{b['message']}-{b['color']}?style=for-the-badge&logo={b['logo']}&logoColor={b['logoColor']}&labelColor={labelColor}"
         html += f'  <img src="{img_url}" />\n'
     html += '</div>'
     return html

@@ -3,44 +3,50 @@
     {
       "label": "MBA",
       "message": "Global_Management",
-      "color": "00529B",
+      "color": "24283B",
+      "labelColor": "1A1B27",
       "logo": "googlescholar",
-      "logoColor": "white"
+      "logoColor": "7AA2F7"
     },
     {
       "label": "MSc",
       "message": "Mechanical_Power_Engineering",
-      "color": "00529B",
+      "color": "24283B",
+      "labelColor": "1A1B27",
       "logo": "googlescholar",
-      "logoColor": "white"
+      "logoColor": "7AA2F7"
     },
     {
       "label": "Diploma",
-      "message": "MEP_BIM_98%25",
-      "color": "00A86B",
+      "message": "MEP_BIM",
+      "color": "24283B",
+      "labelColor": "1A1B27",
       "logo": "autodesk",
-      "logoColor": "white"
+      "logoColor": "7AA2F7"
     },
     {
       "label": "ITI",
       "message": "AI_&_Machine_Learning",
-      "color": "FF0000",
+      "color": "24283B",
+      "labelColor": "1A1B27",
       "logo": "deeplearning.ai",
-      "logoColor": "white"
+      "logoColor": "7AA2F7"
     },
     {
       "label": "U_of_Tokyo",
       "message": "Global_Consumer_Intelligence",
-      "color": "002147",
+      "color": "24283B",
+      "labelColor": "1A1B27",
       "logo": "tokyo",
-      "logoColor": "white"
+      "logoColor": "7AA2F7"
     },
     {
       "label": "Diplomas",
       "message": "HR_Management",
-      "color": "32CD32",
+      "color": "24283B",
+      "labelColor": "1A1B27",
       "logo": "googlescholar",
-      "logoColor": "white"
+      "logoColor": "7AA2F7"
     }
   ]
 }

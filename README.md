@@ -51,12 +51,12 @@
 
 <!-- START_BADGES -->
 <div align="center">
-  <img src="https://img.shields.io/badge/MBA-Global_Management-00529B?style=for-the-badge&logo=googlescholar&logoColor=white" />
-  <img src="https://img.shields.io/badge/MSc-Mechanical_Power_Engineering-00529B?style=for-the-badge&logo=googlescholar&logoColor=white" />
-  <img src="https://img.shields.io/badge/Diploma-MEP_BIM_98%25-00A86B?style=for-the-badge&logo=autodesk&logoColor=white" />
-  <img src="https://img.shields.io/badge/ITI-AI_&_Machine_Learning-FF0000?style=for-the-badge&logo=deeplearning.ai&logoColor=white" />
-  <img src="https://img.shields.io/badge/U_of_Tokyo-Global_Consumer_Intelligence-002147?style=for-the-badge&logo=tokyo&logoColor=white" />
-  <img src="https://img.shields.io/badge/Diplomas-HR_Management-32CD32?style=for-the-badge&logo=googlescholar&logoColor=white" />
+  <img src="https://img.shields.io/badge/MBA-Global_Management-24283B?style=for-the-badge&logo=googlescholar&logoColor=7AA2F7&labelColor=1A1B27" />
+  <img src="https://img.shields.io/badge/MSc-Mechanical_Power_Engineering-24283B?style=for-the-badge&logo=googlescholar&logoColor=7AA2F7&labelColor=1A1B27" />
+  <img src="https://img.shields.io/badge/Diploma-MEP_BIM-24283B?style=for-the-badge&logo=autodesk&logoColor=7AA2F7&labelColor=1A1B27" />
+  <img src="https://img.shields.io/badge/ITI-AI_&_Machine_Learning-24283B?style=for-the-badge&logo=deeplearning.ai&logoColor=7AA2F7&labelColor=1A1B27" />
+  <img src="https://img.shields.io/badge/U_of_Tokyo-Global_Consumer_Intelligence-24283B?style=for-the-badge&logo=tokyo&logoColor=7AA2F7&labelColor=1A1B27" />
+  <img src="https://img.shields.io/badge/Diplomas-HR_Management-24283B?style=for-the-badge&logo=googlescholar&logoColor=7AA2F7&labelColor=1A1B27" />
 </div>
 <!-- END_BADGES -->
 
