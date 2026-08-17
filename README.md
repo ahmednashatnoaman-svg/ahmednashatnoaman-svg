@@ -30,16 +30,13 @@
 
 ### 🛠️ Tech Stack & AI Expertise
 
+<!-- START_TECH_STACK -->
 <div align="center">
-  <p><b>Core Languages & Databases</b></p>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=py,cpp,ts,sql,postgres,mysql,mongodb&perline=10" /></a>
-  <br/>
-  <p><b>AI, Machine Learning & Big Data</b></p>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=tensorflow,pytorch,scikitlearn,hadoop,aws,gcp,docker,git&perline=10" /></a>
-  <br/>
-  <p><b>Frameworks & Tools</b></p>
-  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=django,fastapi,github,linux,bash&perline=10" /></a>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=aws,cpp,docker,html,postgres,py,tensorflow,ts&perline=14" />
+  </a>
 </div>
+<!-- END_TECH_STACK -->
 <br/>
 <p align="center">
   <i>Specialties: LLMs, Generative & Agentic AI, Prompt Engineering (OpenAI, Gemini, Claude), Computer Vision, PySpark, MLOps.</i>
