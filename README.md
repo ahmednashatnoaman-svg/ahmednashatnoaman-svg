@@ -23,15 +23,8 @@
 <div align="center">
   <table>
     <tr>
-      <td width="55%">
+      <td width="100%">
         Business-minded multidisciplinary professional bridging corporate strategy, Artificial Intelligence, and Mechanical Engineering. I deliver measurable value through strategic planning, project management, and deploying AI models and data-driven solutions to optimize organizational efficiency. Adept at leveraging a unique blend of business leadership, technical acumen, alongside extensive HR and BIM expertise to deliver scalable, cross-functional innovations.
-      </td>
-      <td width="45%">
-        <ul>
-          <li>💼 <b>Experience:</b> 2 years of professional experience in software engineering, AI, and Machine Learning.</li>
-          <li>🏢 <b>Role:</b> AI Engineer at <b>ITI (Information Technology Institute)</b>.</li>
-          <li>🎓 <b>Education:</b> Pursuing MBA in Global Management & MSc in Mechanical Power Engineering.</li>
-        </ul>
       </td>
     </tr>
   </table>
