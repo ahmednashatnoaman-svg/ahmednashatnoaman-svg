@@ -1,0 +1,46 @@
+{
+  "badges": [
+    {
+      "label": "MBA",
+      "message": "Global_Management",
+      "color": "00529B",
+      "logo": "google-scholar",
+      "logoColor": "white"
+    },
+    {
+      "label": "MSc",
+      "message": "Mechanical_Power_Engineering",
+      "color": "00529B",
+      "logo": "google-scholar",
+      "logoColor": "white"
+    },
+    {
+      "label": "Diploma",
+      "message": "MEP_BIM_98%25",
+      "color": "00A86B",
+      "logo": "autodesk",
+      "logoColor": "white"
+    },
+    {
+      "label": "ITI",
+      "message": "AI_&_Machine_Learning",
+      "color": "FF0000",
+      "logo": "deeplearning.ai",
+      "logoColor": "white"
+    },
+    {
+      "label": "U_of_Tokyo",
+      "message": "Global_Consumer_Intelligence",
+      "color": "002147",
+      "logo": "tokyo",
+      "logoColor": "white"
+    },
+    {
+      "label": "Diplomas",
+      "message": "HR_Management",
+      "color": "32CD32",
+      "logo": "googlescholar",
+      "logoColor": "white"
+    }
+  ]
+}
