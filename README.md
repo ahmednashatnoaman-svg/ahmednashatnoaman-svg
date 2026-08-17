@@ -32,9 +32,14 @@
 
 <!-- START_TECH_STACK -->
 <div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=aws,bash,c,cmake,cpp,css,dart,docker,html,js,kotlin,postgres,py,ruby,swift,tensorflow,ts&perline=14" />
-  </a>
+  <p><b>Core Languages & Databases</b></p>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=bash,c,cpp,css,dart,html,js,kotlin,postgres,py,swift,ts&perline=14" /></a>
+  <br/>
+  <p><b>AI, Machine Learning & Big Data</b></p>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=aws,tensorflow&perline=14" /></a>
+  <br/>
+  <p><b>Frameworks & Tools</b></p>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=cmake,docker,ruby&perline=14" /></a>
 </div>
 <!-- END_TECH_STACK -->
 <br/>

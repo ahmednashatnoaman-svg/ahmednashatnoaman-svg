@@ -46,6 +46,9 @@ ICON_MAP = {
     "machine-learning": "ai", "deep-learning": "ai"
 }
 
+CAT_LANG_DB = {"c", "cs", "cpp", "crystal", "css", "dart", "elixir", "go", "html", "java", "js", "kotlin", "lua", "nim", "php", "py", "r", "rb", "rs", "swift", "ts", "zig", "postgres", "mysql", "mongodb", "sqlite", "redis", "mariadb", "dynamodb", "cassandra", "bash", "powershell"}
+CAT_AI_DATA = {"tensorflow", "pytorch", "scikitlearn", "hadoop", "spark", "aws", "gcp", "azure", "ai", "matlab", "julia", "octave", "kafka", "elasticsearch", "grafana", "prometheus"}
+
 def fetch_github_api(url):
     headers = {}
     if "GITHUB_TOKEN" in os.environ:
@@ -130,11 +133,22 @@ def generate_tech_stack_html(repos, extra_icons):
     if not icons:
         icons = {"py", "github", "git"}
         
-    icon_str = ",".join(sorted(icons))
+    core_langs = sorted([i for i in icons if i in CAT_LANG_DB])
+    ai_data = sorted([i for i in icons if i in CAT_AI_DATA])
+    frameworks = sorted([i for i in icons if i not in CAT_LANG_DB and i not in CAT_AI_DATA])
+    
     html = '<div align="center">\n'
-    html += f'  <a href="https://skillicons.dev">\n'
-    html += f'    <img src="https://skillicons.dev/icons?i={icon_str}&perline=14" />\n'
-    html += f'  </a>\n'
+    if core_langs:
+        html += '  <p><b>Core Languages & Databases</b></p>\n'
+        html += f'  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i={",".join(core_langs)}&perline=14" /></a>\n'
+        html += '  <br/>\n'
+    if ai_data:
+        html += '  <p><b>AI, Machine Learning & Big Data</b></p>\n'
+        html += f'  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i={",".join(ai_data)}&perline=14" /></a>\n'
+        html += '  <br/>\n'
+    if frameworks:
+        html += '  <p><b>Frameworks & Tools</b></p>\n'
+        html += f'  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i={",".join(frameworks)}&perline=14" /></a>\n'
     html += '</div>'
     return html
 
