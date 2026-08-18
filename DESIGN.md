@@ -77,11 +77,10 @@ section rules.
 `7AA2F7 → BB9AF7 → 7DCFFF`. The same three stops as the header, so the eye reads
 them as the same system.
 
-**The pipeline illustration** (`assets/pipeline.svg`) is hand-authored and
-self-hosted. Every other visual on the page depends on a third-party service that can
-rate-limit or disappear; this one cannot. Its pulses travel *behind* the stage cards so
-data visibly enters a stage, is processed, and emerges — the animation carries meaning
-rather than just moving.
+**The architecture diagram** is Mermaid, rendered natively by GitHub — no image
+service involved, so it cannot 503. Each stage carries its own palette colour, and the
+same colours key the table beneath it. It describes a *general* data-and-AI
+architecture on purpose: this is a public profile, not a portfolio for one domain.
 
 ---
 
@@ -183,7 +182,52 @@ everything it renders is already covered by the stats cards, the trophy row and 
 
 ---
 
-## 8. Failure modes to know about
+## 8. Third-party services: what is used and why
+
+Almost every visual on a profile README is a free deployment someone else pays for.
+Two of the most popular ones were **dead** when this profile was built:
+
+| Service | Status | What is used instead |
+| :--- | :--- | :--- |
+| `github-readme-stats.vercel.app` | `503` — over quota, persistent | `github-stats-extended.vercel.app` — a drop-in fork; only the hostname changes |
+| `github-profile-trophy.vercel.app` | `402 DEPLOYMENT_DISABLED` — shut off | `github-trophies.vercel.app` |
+| `*.herokuapp.com` (typing SVG, streak) | Retired with Heroku's free tier | `readme-typing-svg.demolab.com`, `streak-stats.demolab.com` |
+
+Currently healthy: `capsule-render`, `skillicons.dev`, `img.shields.io`,
+`github-profile-summary-cards`, `github-readme-activity-graph`, `komarev.com`.
+
+If one of these dies too, the replacement path is the same: find a maintained fork with
+an identical query interface and swap the hostname. Verify before trusting it:
+
+```bash
+curl -s -o /dev/null -w '%{http_code}\n' "<candidate-url>"      # must be 200
+curl -s "<candidate-url>" | xmllint --noout -                   # must parse as XML
+```
+
+---
+
+## 9. Two escaping bugs that will bite you
+
+**A bare `&` breaks an SVG.** `capsule-render` interpolates your `text` and `desc`
+parameters straight into an SVG text node without escaping. Passing `%26` produced:
+
+```
+error on line 47 at column 118: xmlParseEntityRef: no name
+```
+
+The browser then refuses to render the *entire* image. **Never put an ampersand in a
+capsule-render `text` or `desc` value** — write "and". Everything else on the page
+(shields, skillicons, typing SVG) escapes correctly, but verify any new service with
+`xmllint` before trusting it.
+
+**A literal `%` breaks a shields.io badge.** `98%` returns HTTP 400; it must be
+`98%25`. `scripts/sync_profile.py::enc()` handles this — note that the `%` replacement
+must run *first*, before the `-` and `_` doubling, or it would corrupt the escape it
+just inserted.
+
+---
+
+## 10. Failure modes to know about
 
 | Symptom | Cause | Fix |
 | :--- | :--- | :--- |
