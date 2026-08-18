@@ -340,7 +340,7 @@ def block_projects(d: dict) -> str:
         cards.append(
             f'  <a href="{repo["html_url"]}">\n'
             f'    <img width="49%" '
-            f'src="https://github-readme-stats.vercel.app/api/pin/'
+            f'src="https://github-stats-extended.vercel.app/api/pin/'
             f'?username={repo.get("owner", {}).get("login", USER)}'
             f'&repo={repo["name"]}&theme={THEME["card_theme"]}'
             f'&hide_border=true&bg_color={THEME["bg"]}&title_color={THEME["primary"]}'
