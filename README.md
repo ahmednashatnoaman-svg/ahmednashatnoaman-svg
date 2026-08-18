@@ -364,14 +364,6 @@ flowchart LR
   <img width="97%" src="https://raw.githubusercontent.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution calendar" />
 </div>
 
-<details>
-<summary><b>📉 Deep-dive metrics</b></summary>
-<br/>
-<div align="center">
-  <img width="80%" src="https://raw.githubusercontent.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/main/assets/metrics.svg" alt="Detailed metrics" />
-</div>
-</details>
-
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:7AA2F7,50:BB9AF7,100:7DCFFF&height=2&section=header" width="100%" alt="" />
 
 ## &nbsp;⚡&nbsp; Recent Activity
