@@ -298,6 +298,46 @@ flowchart LR
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:7AA2F7,50:BB9AF7,100:7DCFFF&height=2&section=header" width="100%" alt="" />
 
+## &nbsp;🚀&nbsp; Featured Work
+
+<!-- PROJECTS:START -->
+<div align="center">
+  <a href="https://github.com/ahmednashatnoaman-svg/career-copilot">
+    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmednashatnoaman-svg&repo=career-copilot&theme=tokyonight&hide_border=true&bg_color=1A1B27&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5" alt="career-copilot" />
+  </a>
+  <a href="https://github.com/ahmednashatnoaman-svg/be-my-eye">
+    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmednashatnoaman-svg&repo=be-my-eye&theme=tokyonight&hide_border=true&bg_color=1A1B27&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5" alt="be-my-eye" />
+  </a>
+  <a href="https://github.com/ahmednashatnoaman-svg/clinical-rag-pipeline">
+    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmednashatnoaman-svg&repo=clinical-rag-pipeline&theme=tokyonight&hide_border=true&bg_color=1A1B27&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5" alt="clinical-rag-pipeline" />
+  </a>
+  <a href="https://github.com/ahmednashatnoaman-svg/supply-chain-forecasting">
+    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmednashatnoaman-svg&repo=supply-chain-forecasting&theme=tokyonight&hide_border=true&bg_color=1A1B27&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5" alt="supply-chain-forecasting" />
+  </a>
+</div>
+
+<details>
+<summary><b>📚 Browse the full project index</b></summary>
+<br/>
+
+| Project | What it does | Stack | Stars |
+| :--- | :--- | :--- | :---: |
+| **[career-copilot](https://github.com/ahmednashatnoaman-svg/career-copilot)** | AI Career Copilot — supervisor multi-agent system (LangGraph, FastAPI, free LLM stack: Groq/Gemini, Qdrant, Podman) | `fastapi` `langgraph` `llm` | ⭐ 2 |
+| **[be-my-eye](https://github.com/ahmednashatnoaman-svg/be-my-eye)** | AI voice assistant for blind and low-vision users — point a phone camera, ask a question out loud, and get a concis… | `accessibility` `arabic-nlp` `computer-vision` | ⭐ 1 |
+| **[clinical-rag-pipeline](https://github.com/ahmednashatnoaman-svg/clinical-rag-pipeline)** | 🏥 A production-ready Document Ingestion Pipeline and RAG system for medical guidelines, featuring section-aware chu… | `document-processing` `embeddings` `healthcare` | — |
+| **[supply-chain-forecasting](https://github.com/ahmednashatnoaman-svg/supply-chain-forecasting)** | Production-grade demand forecasting & dynamic pricing on Spark, Kafka & Hadoop — Lambda architecture, 5-member orch… | `apache-spark` `big-data` `forecasting` | — |
+| **[rag-evaluation](https://github.com/ahmednashatnoaman-svg/rag-evaluation)** | 🚀 Day 2 RAG Evaluation Pipeline: Retrieval optimization, chunking ablation testing, and Precision@k metrics for cli… | `benchmarking` `evaluation` `information-retrieval` | — |
+| **[Traffic-Sign-Recognition-Multiscale-CNN](https://github.com/ahmednashatnoaman-svg/Traffic-Sign-Recognition-Multiscale-CNN)** | PyTorch reimplementation of Sermanet & LeCun's multi-scale ConvNet for traffic sign recognition — 97.1% test accura… | `cnn` `computer-vision` `deep-learning` | — |
+| **[ML2-document-clustering](https://github.com/ahmednashatnoaman-svg/ML2-document-clustering)** | Unsupervised document clustering: K-Means, Hierarchical, GMM on Wikipedia People + 20 Newsgroups with TF-IDF + LSA.… | `clustering` `scikit-learn` `streamlit` | — |
+| **[bitcoin-forecasting-portal](https://github.com/ahmednashatnoaman-svg/bitcoin-forecasting-portal)** | Professional Bitcoin price forecasting web application using Streamlit and Plotly. | `forecasting` `plotly` `streamlit` | — |
+| **[BookFlow](https://github.com/ahmednashatnoaman-svg/BookFlow)** | Booking and scheduling platform built on a typed TypeScript stack. | `booking` `fullstack` `typescript` | — |
+| **[nlp-mental-health-chatbot-2026](https://github.com/ahmednashatnoaman-svg/nlp-mental-health-chatbot-2026)** | Conversational mental-health support agent — intent classification, safety routing and empathetic response generation. | `chatbot` `healthcare` `llm` | — |
+
+</details>
+<!-- PROJECTS:END -->
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:7AA2F7,50:BB9AF7,100:7DCFFF&height=2&section=header" width="100%" alt="" />
+
 ## &nbsp;📈&nbsp; GitHub Analytics
 
 <div align="center">
@@ -374,7 +414,7 @@ case behind a model.
 
 <!-- UPDATED:START -->
 <div align="center">
-  <sub>Rebuilt automatically · <b>18 August 2026, 00:26 UTC</b> · <a href="https://github.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/actions">view the pipeline</a></sub>
+  <sub>Rebuilt automatically · <b>18 August 2026, 00:29 UTC</b> · <a href="https://github.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/actions">view the pipeline</a></sub>
 </div>
 <!-- UPDATED:END -->
 
