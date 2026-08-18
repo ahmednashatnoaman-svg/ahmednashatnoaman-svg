@@ -16,7 +16,7 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1A1B27,35:7AA2F7,75:BB9AF7,100:7DCFFF&height=230&section=header&text=Ahmed%20Nashat%20Noaman&fontSize=52&fontColor=FFFFFF&fontAlignY=34&animation=fadeIn&desc=AI%20%26%20Machine%20Learning%20Engineer%20%C2%B7%20MBA%20Global%20Management&descAlignY=54&descSize=17" width="100%" alt="Ahmed Nashat Noaman" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1A1B27,35:7AA2F7,75:BB9AF7,100:7DCFFF&height=230&section=header&text=Ahmed%20Nashat%20Noaman&fontSize=52&fontColor=FFFFFF&fontAlignY=34&animation=fadeIn&desc=AI%20and%20Machine%20Learning%20Engineer%20%C2%B7%20MBA%20Global%20Management&descAlignY=54&descSize=17" width="100%" alt="Ahmed Nashat Noaman" />
 
 <a href="https://github.com/ahmednashatnoaman-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=700&color=7AA2F7&center=true&vCenter=true&width=780&height=46&lines=AI+%26+Machine+Learning+Engineer;Building+RAG+%26+Agentic+AI+Systems;Big+Data+on+Spark%2C+Kafka+%26+Hadoop;MBA+Global+Management+%7C+MSc+Mechanical+Power;Turning+Data+into+Business+Strategy" alt="What I do" />
@@ -37,8 +37,6 @@
 
 ## &nbsp;🧭&nbsp; About
 
-<img align="right" width="360" src="https://raw.githubusercontent.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/main/assets/pipeline.svg" alt="AI pipeline" />
-
 I build **AI systems that carry a business case**, not just a benchmark score.
 
 My background is deliberately hybrid: a **BSc and MSc in Mechanical Power Engineering**
@@ -46,15 +44,8 @@ taught me to model systems from first principles, an **MBA in Global Management*
 me to price the decision that follows, and the **ITI AI & Machine Learning program**
 gave me the engineering to ship it.
 
-That combination shows up in the work — retrieval pipelines for clinical decision
-support, Lambda-architecture forecasting on Spark and Kafka, multi-agent career tooling,
-and a voice assistant for blind and low-vision users. Each one starts from a real
-constraint and ends at something deployable.
-
 **Currently:** AI & ML trainee at **ITI**, MBA candidate at **ESLSCA Paris Business
 School**, and MSc researcher at **Mansoura University**.
-
-<br clear="right"/>
 
 <!-- FOCUS:START -->
 | | | |
@@ -144,7 +135,7 @@ School**, and MSc researcher at **Mansoura University**.
 <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
 <img src="https://img.shields.io/badge/Plotly_Dash-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly Dash" />
 <img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" alt="MLflow" />
-<img src="https://img.shields.io/badge/Weights_%26_Biases-FFBE00?style=for-the-badge&logo=weightsandbiases&logoColor=000000" alt="Weights %26 Biases" />
+<img src="https://img.shields.io/badge/Weights_%2526_Biases-FFBE00?style=for-the-badge&logo=weightsandbiases&logoColor=000000" alt="Weights %26 Biases" />
 <img src="https://img.shields.io/badge/Podman-892CA0?style=for-the-badge&logo=podman&logoColor=white" alt="Podman" />
 
 <br/>
@@ -156,7 +147,7 @@ School**, and MSc researcher at **Mansoura University**.
 <img src="https://img.shields.io/badge/Autodesk_Revit-0696D7?style=for-the-badge&logo=autodeskrevit&logoColor=white" alt="Autodesk Revit" />
 <img src="https://img.shields.io/badge/Navisworks-0696D7?style=for-the-badge&logo=autodesk&logoColor=white" alt="Navisworks" />
 <img src="https://img.shields.io/badge/BIM_ISO_19650-14CC80?style=for-the-badge&logo=buildkite&logoColor=000000" alt="BIM ISO 19650" />
-<img src="https://img.shields.io/badge/Agile_%26_Scrum-0052CC?style=for-the-badge&logo=jira&logoColor=white" alt="Agile %26 Scrum" />
+<img src="https://img.shields.io/badge/Agile_%2526_Scrum-0052CC?style=for-the-badge&logo=jira&logoColor=white" alt="Agile %26 Scrum" />
 <img src="https://img.shields.io/badge/PMP_Prep-0079BF?style=for-the-badge&logo=trello&logoColor=white" alt="PMP Prep" />
 
 <br/>
@@ -189,7 +180,7 @@ C++                    █░░░░░░░░░░░░░░░░░░
 <div align="center">
   <img src="https://img.shields.io/badge/MBA-Global_Management-24283B?style=for-the-badge&logo=googlescholar&logoColor=7AA2F7&labelColor=1A1B27" alt="MBA Global Management" />
   <img src="https://img.shields.io/badge/MSc-Mechanical_Power_Eng.-24283B?style=for-the-badge&logo=googlescholar&logoColor=7AA2F7&labelColor=1A1B27" alt="MSc Mechanical Power Eng." />
-  <img src="https://img.shields.io/badge/ITI-AI_%26_Machine_Learning-24283B?style=for-the-badge&logo=tensorflow&logoColor=7AA2F7&labelColor=1A1B27" alt="ITI AI %26 Machine Learning" />
+  <img src="https://img.shields.io/badge/ITI-AI_%2526_Machine_Learning-24283B?style=for-the-badge&logo=tensorflow&logoColor=7AA2F7&labelColor=1A1B27" alt="ITI AI %26 Machine Learning" />
   <img src="https://img.shields.io/badge/BSc-Honors_·_Rank_15-24283B?style=for-the-badge&logo=googlescholar&logoColor=7AA2F7&labelColor=1A1B27" alt="BSc Honors · Rank 15" />
 </div>
 
@@ -205,7 +196,7 @@ C++                    █░░░░░░░░░░░░░░░░░░
 <sub><b>Certifications & Professional Programs</b></sub>
 
   <img src="https://img.shields.io/badge/U._of_Tokyo-Global_Consumer_Intelligence-24283B?style=for-the-badge&logo=googlescholar&logoColor=9ECE6A&labelColor=1A1B27" alt="U. of Tokyo Global Consumer Intelligence" />
-  <img src="https://img.shields.io/badge/KAITECH-MEP--BIM_Diploma_·_98%-24283B?style=for-the-badge&logo=autodeskrevit&logoColor=9ECE6A&labelColor=1A1B27" alt="KAITECH MEP-BIM Diploma · 98%" />
+  <img src="https://img.shields.io/badge/KAITECH-MEP--BIM_Diploma_·_98%25-24283B?style=for-the-badge&logo=autodeskrevit&logoColor=9ECE6A&labelColor=1A1B27" alt="KAITECH MEP-BIM Diploma · 98%" />
   <img src="https://img.shields.io/badge/Egycham-HR_Management_Diplomas-24283B?style=for-the-badge&logo=coursera&logoColor=9ECE6A&labelColor=1A1B27" alt="Egycham HR Management Diplomas" />
   <img src="https://img.shields.io/badge/BDI-Business_Development_Pro-24283B?style=for-the-badge&logo=googleanalytics&logoColor=9ECE6A&labelColor=1A1B27" alt="BDI Business Development Pro" />
   <img src="https://img.shields.io/badge/Engineering_Tracks-PMP_Prep_·_FE_Course-24283B?style=for-the-badge&logo=trello&logoColor=9ECE6A&labelColor=1A1B27" alt="Engineering Tracks PMP Prep · FE Course" />
@@ -215,104 +206,95 @@ C++                    █░░░░░░░░░░░░░░░░░░
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:7AA2F7,50:BB9AF7,100:7DCFFF&height=2&section=header" width="100%" alt="" />
 
-## &nbsp;🏗️&nbsp; Systems I Architect
+## &nbsp;🏗️&nbsp; How I Architect Systems
 
-Beyond single notebooks, I design and run **multi-service AI platforms**. The flagship is a
-clinical decision-support system for independent clinics in Egypt: a ten-service architecture
-that takes a patient from a spoken Arabic history all the way to a cited, guideline-grounded
-recommendation — with PII masked before anything reaches a model.
+Models are the easy part. The value shows up in everything around them — how data
+arrives, where it is stored, how a prediction reaches a user, and how you know it is
+still correct next month. This is the shape I build toward, and the colours map to the
+palette used across this profile.
 
 ```mermaid
-%%{init: {"theme":"base","themeVariables":{"primaryColor":"#24283B","primaryTextColor":"#C0CAF5","primaryBorderColor":"#7AA2F7","lineColor":"#7AA2F7","secondaryColor":"#1F2335","tertiaryColor":"#1F2335","clusterBkg":"#1A1B27","clusterBorder":"#414868","fontSize":"13px"}}}%%
+%%{init: {"theme":"base","themeVariables":{"fontFamily":"ui-monospace, SFMono-Regular, Menlo, monospace","fontSize":"13px","primaryTextColor":"#C0CAF5","lineColor":"#7AA2F7","clusterBkg":"#16172099","clusterBorder":"#414868","edgeLabelBackground":"#1A1B27"}}}%%
 flowchart LR
-    U(["Clinician<br/>and Patient"])
-
-    subgraph EDGE ["Edge"]
-        GW["API Gateway<br/>Workflow Orchestrator"]
+    subgraph SRC ["&nbsp;① SOURCES&nbsp;"]
+        direction TB
+        S1["Documents<br/>and files"]
+        S2["APIs and<br/>event streams"]
+        S3["Operational<br/>databases"]
     end
 
-    subgraph INTAKE ["Intake"]
-        V["Voice Intake<br/>Arabic ASR"]
-        H["AI History Taking<br/>stateful agent"]
-        M["Secure OCR<br/>PII masking"]
+    subgraph PRC ["&nbsp;② PROCESSING&nbsp;"]
+        direction TB
+        P1["Ingest<br/>validate and clean"]
+        P2["Transform<br/>features and embeddings"]
     end
 
-    subgraph DIAG ["Diagnostics"]
-        L["Lab Report<br/>extraction"]
-        R["Radiology<br/>analysis"]
-        S["Image<br/>segmentation"]
+    subgraph STO ["&nbsp;③ STORAGE&nbsp;"]
+        direction TB
+        T1[("Warehouse")]
+        T2[("Vector index")]
     end
 
-    subgraph EV ["Evidence Layer"]
-        I["Ingestion<br/>chunk and embed"]
-        Q[("Vector Store<br/>clinical guidelines")]
+    subgraph INT ["&nbsp;④ INTELLIGENCE&nbsp;"]
+        direction TB
+        I1["Classical ML<br/>forecast and classify"]
+        I2["LLM and agents<br/>retrieve and reason"]
     end
 
-    D["Clinical Decision Support<br/>grounded and cited"]
+    subgraph DEL ["&nbsp;⑤ DELIVERY&nbsp;"]
+        direction TB
+        D1["Services<br/>and APIs"]
+        D2["Dashboards<br/>and reports"]
+    end
 
-    U --> GW
-    GW --> V
-    GW --> M
-    GW --> R
-    V --> H
-    M --> L
-    R --> S
-    I --> Q
-    H --> D
-    L --> D
-    S --> D
-    Q --> D
-    D --> GW
-    GW --> U
+    OPS["⑥ Observability<br/>evaluation, cost and drift"]
+
+    S1 --> P1
+    S2 --> P1
+    S3 --> P1
+    P1 --> P2
+    P2 --> T1
+    P2 --> T2
+    T1 --> I1
+    T2 --> I2
+    T1 -.-> I2
+    I1 --> D1
+    I2 --> D1
+    I1 --> D2
+    I2 --> D2
+    D1 --> OPS
+    D2 --> OPS
+    OPS -. "retrain and tune" .-> P2
+
+    classDef source  fill:#1F2335,stroke:#7DCFFF,stroke-width:2px,color:#C0CAF5
+    classDef process fill:#1F2335,stroke:#7AA2F7,stroke-width:2px,color:#C0CAF5
+    classDef store   fill:#1F2335,stroke:#BB9AF7,stroke-width:2px,color:#C0CAF5
+    classDef intel   fill:#1F2335,stroke:#E0AF68,stroke-width:2px,color:#C0CAF5
+    classDef deliver fill:#1F2335,stroke:#9ECE6A,stroke-width:2px,color:#C0CAF5
+    classDef ops     fill:#24283B,stroke:#F7768E,stroke-width:2px,color:#C0CAF5
+
+    class S1,S2,S3 source
+    class P1,P2 process
+    class T1,T2 store
+    class I1,I2 intel
+    class D1,D2 deliver
+    class OPS ops
+
+    style SRC fill:#1A1B27,stroke:#7DCFFF,stroke-width:1px,color:#7DCFFF
+    style PRC fill:#1A1B27,stroke:#7AA2F7,stroke-width:1px,color:#7AA2F7
+    style STO fill:#1A1B27,stroke:#BB9AF7,stroke-width:1px,color:#BB9AF7
+    style INT fill:#1A1B27,stroke:#E0AF68,stroke-width:1px,color:#E0AF68
+    style DEL fill:#1A1B27,stroke:#9ECE6A,stroke-width:1px,color:#9ECE6A
 ```
 
-| Layer | Engineering problem it solves |
-| :--- | :--- |
-| **Edge** | A single REST surface over the service mesh; retries, routing and workflow state |
-| **Intake** | Arabic speech recognition, a stateful interview agent, and PII masking *before* inference |
-| **Diagnostics** | Multimodal extraction from lab reports, radiology studies and medical imaging |
-| **Evidence** | Section-aware chunking and embedding of clinical guidelines into a vector store |
-| **Decision** | Retrieval-grounded recommendations that cite the guideline they came from |
-
-<sub>Shown at capability level — data flow and responsibilities, not implementation. Happy to walk through the design in detail.</sub>
-
-## &nbsp;🚀&nbsp; Featured Work
-
-<!-- PROJECTS:START -->
-<div align="center">
-  <a href="https://github.com/ahmednashatnoaman-svg/career-copilot">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmednashatnoaman-svg&repo=career-copilot&theme=tokyonight&hide_border=true&bg_color=1A1B27&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5" alt="career-copilot" />
-  </a>
-  <a href="https://github.com/ahmednashatnoaman-svg/be-my-eye">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmednashatnoaman-svg&repo=be-my-eye&theme=tokyonight&hide_border=true&bg_color=1A1B27&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5" alt="be-my-eye" />
-  </a>
-  <a href="https://github.com/ahmednashatnoaman-svg/clinical-rag-pipeline">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmednashatnoaman-svg&repo=clinical-rag-pipeline&theme=tokyonight&hide_border=true&bg_color=1A1B27&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5" alt="clinical-rag-pipeline" />
-  </a>
-  <a href="https://github.com/ahmednashatnoaman-svg/supply-chain-forecasting">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmednashatnoaman-svg&repo=supply-chain-forecasting&theme=tokyonight&hide_border=true&bg_color=1A1B27&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5" alt="supply-chain-forecasting" />
-  </a>
-</div>
-
-<details>
-<summary><b>📚 Browse the full project index</b></summary>
-<br/>
-
-| Project | What it does | Stack | Stars |
-| :--- | :--- | :--- | :---: |
-| **[career-copilot](https://github.com/ahmednashatnoaman-svg/career-copilot)** | AI Career Copilot — supervisor multi-agent system (LangGraph, FastAPI, free LLM stack: Groq/Gemini, Qdrant, Podman) | `fastapi` `langgraph` `llm` | ⭐ 2 |
-| **[be-my-eye](https://github.com/ahmednashatnoaman-svg/be-my-eye)** | AI voice assistant for blind and low-vision users — point a phone camera, ask a question out loud, and get a concis… | `accessibility` `arabic-nlp` `computer-vision` | ⭐ 1 |
-| **[clinical-rag-pipeline](https://github.com/ahmednashatnoaman-svg/clinical-rag-pipeline)** | 🏥 A production-ready Document Ingestion Pipeline and RAG system for medical guidelines, featuring section-aware chu… | `document-processing` `embeddings` `healthcare` | — |
-| **[supply-chain-forecasting](https://github.com/ahmednashatnoaman-svg/supply-chain-forecasting)** | Production-grade demand forecasting & dynamic pricing on Spark, Kafka & Hadoop — Lambda architecture, 5-member orch… | `apache-spark` `big-data` `forecasting` | — |
-| **[rag-evaluation](https://github.com/ahmednashatnoaman-svg/rag-evaluation)** | 🚀 Day 2 RAG Evaluation Pipeline: Retrieval optimization, chunking ablation testing, and Precision@k metrics for cli… | `benchmarking` `evaluation` `information-retrieval` | — |
-| **[Traffic-Sign-Recognition-Multiscale-CNN](https://github.com/ahmednashatnoaman-svg/Traffic-Sign-Recognition-Multiscale-CNN)** | PyTorch reimplementation of Sermanet & LeCun's multi-scale ConvNet for traffic sign recognition — 97.1% test accura… | `cnn` `computer-vision` `deep-learning` | — |
-| **[ML2-document-clustering](https://github.com/ahmednashatnoaman-svg/ML2-document-clustering)** | Unsupervised document clustering: K-Means, Hierarchical, GMM on Wikipedia People + 20 Newsgroups with TF-IDF + LSA.… | `clustering` `scikit-learn` `streamlit` | — |
-| **[bitcoin-forecasting-portal](https://github.com/ahmednashatnoaman-svg/bitcoin-forecasting-portal)** | Professional Bitcoin price forecasting web application using Streamlit and Plotly. | `forecasting` `plotly` `streamlit` | — |
-| **[BookFlow](https://github.com/ahmednashatnoaman-svg/BookFlow)** | Booking and scheduling platform built on a typed TypeScript stack. | `booking` `fullstack` `typescript` | — |
-| **[nlp-mental-health-chatbot-2026](https://github.com/ahmednashatnoaman-svg/nlp-mental-health-chatbot-2026)** | Conversational mental-health support agent — intent classification, safety routing and empathetic response generation. | `chatbot` `healthcare` `llm` | — |
-
-</details>
-<!-- PROJECTS:END -->
+| | Stage | What I care about at this stage |
+| :---: | :--- | :--- |
+| 🟦 | **Sources** | Schema drift, backfills, and the cost of a replay |
+| 🟪 | **Processing** | Idempotent jobs, partitioning, and chunking that survives real documents |
+| 🟣 | **Storage** | Picking the right store per access pattern instead of one store for everything |
+| 🟧 | **Intelligence** | Honest baselines first; an LLM only where a cheaper model genuinely loses |
+| 🟩 | **Delivery** | Latency budgets, graceful degradation, and an interface a non-engineer can read |
+| 🟥 | **Observability** | Evaluation harnesses and cost tracking from day one, not after the incident |
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:7AA2F7,50:BB9AF7,100:7DCFFF&height=2&section=header" width="100%" alt="" />
 
@@ -320,8 +302,8 @@ flowchart LR
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=ahmednashatnoaman-svg&show_icons=true&include_all_commits=true&count_private=true&rank_icon=github&hide_border=true&theme=tokyonight&bg_color=1A1B27&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5&border_radius=12" alt="GitHub stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmednashatnoaman-svg&layout=compact&langs_count=8&hide=html,css,tex&hide_border=true&theme=tokyonight&bg_color=1A1B27&title_color=7AA2F7&text_color=C0CAF5&border_radius=12" alt="Top languages" />
+<img height="170" src="https://github-stats-extended.vercel.app/api?username=ahmednashatnoaman-svg&show_icons=true&include_all_commits=true&count_private=true&rank_icon=github&hide_border=true&theme=tokyonight&bg_color=1A1B27&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5&border_radius=12" alt="GitHub stats" />
+<img height="170" src="https://github-stats-extended.vercel.app/api/top-langs/?username=ahmednashatnoaman-svg&layout=compact&langs_count=8&hide=html,css,tex&hide_border=true&theme=tokyonight&bg_color=1A1B27&title_color=7AA2F7&text_color=C0CAF5&border_radius=12" alt="Top languages" />
 
 <br/><br/>
 
@@ -343,9 +325,7 @@ flowchart LR
 ### &nbsp;🏆&nbsp; Trophy Cabinet
 
 <div align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img width="97%" src="https://github-profile-trophy.vercel.app/?username=ahmednashatnoaman-svg&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6" alt="Trophies" />
-  </a>
+  <img width="97%" src="https://github-trophies.vercel.app/?username=ahmednashatnoaman-svg&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6" alt="Trophies" />
 </div>
 
 ### &nbsp;🐍&nbsp; Contribution Snake
@@ -394,7 +374,7 @@ case behind a model.
 
 <!-- UPDATED:START -->
 <div align="center">
-  <sub>Rebuilt automatically · <b>18 August 2026, 00:14 UTC</b> · <a href="https://github.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/actions">view the pipeline</a></sub>
+  <sub>Rebuilt automatically · <b>18 August 2026, 00:25 UTC</b> · <a href="https://github.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/actions">view the pipeline</a></sub>
 </div>
 <!-- UPDATED:END -->
 
