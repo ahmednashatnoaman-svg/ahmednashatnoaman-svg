@@ -1,0 +1,46 @@
+name: Contribution Snake
+
+# Writes only to the orphan `output` branch, so it never contends with the
+# Profile Pipeline for the tip of `main`.
+
+on:
+  schedule:
+    - cron: '41 2 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/snake.yml'
+
+concurrency:
+  group: profile-snake
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  snake:
+    name: Generate snake
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Build snake animation
+        uses: Platane/snk@v3
+        id: snake
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          # Two variants so the README <picture> element can serve the right
+          # one for the reader's light or dark GitHub theme.
+          outputs: |
+            dist/snake.svg?palette=github-light
+            dist/snake-dark.svg?color_snake=#7AA2F7&color_dots=#1A1B27,#3d59a1,#7AA2F7,#BB9AF7,#7DCFFF
+
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
