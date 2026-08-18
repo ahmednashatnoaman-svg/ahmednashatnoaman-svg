@@ -32,6 +32,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
+
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / "profile.config.json"
 README_PATH = ROOT / "README.md"
@@ -105,6 +106,7 @@ def enc(text: str) -> str:
     """Escape a string for a shields.io path segment."""
     return (
         str(text)
+        .replace("%", "%25")
         .replace("-", "--")
         .replace("_", "__")
         .replace(" ", "_")
