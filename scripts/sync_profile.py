@@ -457,6 +457,10 @@ def block_updated(_: dict) -> str:
     )
 
 
+# Content blocks. UPDATED is deliberately NOT here: it renders the current
+# clock, so including it would make every run differ from the file on disk and
+# the idempotency check below could never return equal. It is stamped
+# separately, and only once something else has actually changed.
 BUILDERS = {
     "STATS": block_stats,
     "LANGBAR": block_langbar,
@@ -465,7 +469,6 @@ BUILDERS = {
     "FOCUS": block_focus,
     "PROJECTS": block_projects,
     "ACTIVITY": block_activity,
-    "UPDATED": block_updated,
 }
 
 
@@ -493,12 +496,23 @@ def main() -> int:
 
     readme = README_PATH.read_text(encoding="utf-8")
     original = readme
+    failed: list[str] = []
     for key, builder in BUILDERS.items():
         try:
             readme = splice(readme, key, builder(data))
             print(f"  ✓ {key}")
-        except Exception as exc:  # noqa: BLE001 - one bad block must not kill the run
-            print(f"  ✗ {key}: {type(exc).__name__}: {exc}", file=sys.stderr)
+        except Exception as exc:  # noqa: BLE001 - report every bad block, not just the first
+            failed.append(key)
+            print(f"::error::block {key} failed: {type(exc).__name__}: {exc}",
+                  file=sys.stderr)
+
+    if failed:
+        # Continuing here would leave stale content in place while the job
+        # reports success, which is the exact silent failure the marker guard
+        # below exists to prevent.
+        print(f"Aborting: {len(failed)} block(s) failed to render: "
+              f"{', '.join(failed)}", file=sys.stderr)
+        return 3
 
     if MISSING:
         # A marker disappears when a section is edited carelessly. Silently
@@ -517,6 +531,13 @@ def main() -> int:
     if check_only:
         print("README.md is stale.", file=sys.stderr)
         return 1
+
+    # Real content moved, so the build stamp is now meaningful.
+    readme = splice(readme, "UPDATED", block_updated(data))
+    if MISSING:
+        print("::error::marker UPDATED:START/UPDATED:END is missing from README.md",
+              file=sys.stderr)
+        return 2
 
     README_PATH.write_text(readme, encoding="utf-8")
     print(f"README.md updated ({len(readme):,} bytes).")
