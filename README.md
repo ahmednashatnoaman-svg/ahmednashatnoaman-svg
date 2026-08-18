@@ -37,15 +37,27 @@
 
 ## &nbsp;🧭&nbsp; About
 
-I build **AI systems that carry a business case**, not just a benchmark score.
+I work at the point where **business strategy meets applied AI** — close enough to the
+model to build it, close enough to the P&L to judge whether it should exist at all.
 
-My background is deliberately hybrid: a **BSc and MSc in Mechanical Power Engineering**
-taught me to model systems from first principles, an **MBA in Global Management** taught
-me to price the decision that follows, and the **ITI AI & Machine Learning program**
-gave me the engineering to ship it.
+That position is deliberate. **Mechanical Power Engineering** (BSc with honours, MSc in
+progress) taught me to model a system from first principles and respect the constraints
+it actually operates under. An **MBA in Global Management** taught me to read the
+decision that follows a number — what it costs, what it returns, and who carries the
+risk. The **ITI AI & Machine Learning programme** supplies the engineering to join the
+two and ship the result.
 
-**Currently:** AI & ML trainee at **ITI**, MBA candidate at **ESLSCA Paris Business
-School**, and MSc researcher at **Mansoura University**.
+What that combination is worth to a team:
+
+| | |
+| :--- | :--- |
+| **Translation** | I turn an ambiguous commercial objective into a specification an ML team can build against — then explain the outcome back to the people funding it, in their terms. |
+| **Cost judgement** | Not every problem earns a large model. I benchmark the cheap option honestly before reaching for the expensive one, and I price inference like any other line item. |
+| **Delivery** | A result that never leaves a notebook has produced nothing. I take work through data engineering, evaluation, deployment and monitoring. |
+| **Stakeholder range** | Comfortable presenting the same system to an engineering team, a clinician, and a board — three audiences, three vocabularies, one architecture. |
+
+**Currently:** AI & Machine Learning trainee at **ITI**, MBA candidate at **ESLSCA
+Paris Business School**, and MSc researcher at **Mansoura University**.
 
 <!-- FOCUS:START -->
 | | | |
@@ -161,8 +173,8 @@ School**, and MSc researcher at **Mansoura University**.
 
 <!-- LANGBAR:START -->
 ```text
-Jupyter / Notebooks    █████████░░░░░░░░░░░░░░░  38.44%
-Python                 ████████░░░░░░░░░░░░░░░░  34.90%
+Jupyter / Notebooks    █████████░░░░░░░░░░░░░░░  38.43%
+Python                 ████████░░░░░░░░░░░░░░░░  34.91%
 TypeScript             ████░░░░░░░░░░░░░░░░░░░░  15.80%
 HTML                   █░░░░░░░░░░░░░░░░░░░░░░░   2.83%
 Dart                   █░░░░░░░░░░░░░░░░░░░░░░░   2.01%
@@ -203,6 +215,36 @@ C++                    █░░░░░░░░░░░░░░░░░░
   <img src="https://img.shields.io/badge/NTC-Training_of_Trainers-24283B?style=for-the-badge&logo=leaderprice&logoColor=9ECE6A&labelColor=1A1B27" alt="NTC Training of Trainers" />
 </div>
 <!-- EDUCATION:END -->
+
+### &nbsp;🗓️&nbsp; The Path So Far
+
+> Two tracks run in parallel on purpose — engineering depth on one side, commercial
+> literacy on the other. Green is in progress, purple is the current AI focus.
+
+```mermaid
+%%{init: {"theme":"base","themeVariables":{"fontFamily":"ui-monospace, SFMono-Regular, Menlo, monospace","fontSize":"12px","textColor":"#C0CAF5","titleColor":"#7AA2F7","sectionBkgColor":"#1F2335","altSectionBkgColor":"#1A1B27","sectionBkgColor2":"#1F2335","gridColor":"#414868","todayLineColor":"#F7768E","taskTextColor":"#1A1B27","taskTextOutsideColor":"#C0CAF5","taskTextDarkColor":"#1A1B27","doneTaskBkgColor":"#7AA2F7","doneTaskBorderColor":"#7AA2F7","activeTaskBkgColor":"#9ECE6A","activeTaskBorderColor":"#9ECE6A","critBkgColor":"#BB9AF7","critBorderColor":"#BB9AF7"}}}%%
+gantt
+    title  From Engineering Fundamentals to Applied AI
+    dateFormat  YYYY-MM
+    axisFormat  %Y
+    tickInterval 1year
+
+    section Engineering
+    BSc Mechanical Power Engineering  (Honors, rank 15)   :done,   2017-09, 2022-07
+    Teaching Assistant, Faculty of Engineering            :done,   2022-09, 2023-02
+    MSc Mechanical Power Engineering  (GPA 3.88)          :active, 2022-09, 2027-06
+
+    section Business
+    HR Management Diplomas                                :done,   2024-03, 2024-10
+    Project Management  (PMP prep, FE)                    :done,   2024-03, 2025-04
+    MBA Global Management, ESLSCA Paris                   :active, 2024-09, 2026-12
+    Business Development Professional                     :done,   2025-08, 2025-10
+
+    section Data and AI
+    MEP-BIM Diploma  (digital delivery)                   :done,   2024-03, 2024-11
+    AI and Machine Learning Program, ITI                  :crit,   2025-10, 2026-07
+    Global Consumer Intelligence, U. of Tokyo             :crit,   2026-04, 2026-07
+```
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:7AA2F7,50:BB9AF7,100:7DCFFF&height=2&section=header" width="100%" alt="" />
 
@@ -303,16 +345,16 @@ flowchart LR
 <!-- PROJECTS:START -->
 <div align="center">
   <a href="https://github.com/ahmednashatnoaman-svg/career-copilot">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmednashatnoaman-svg&repo=career-copilot&theme=tokyonight&hide_border=true&bg_color=1A1B27&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5" alt="career-copilot" />
+    <img width="49%" src="https://github-stats-extended.vercel.app/api/pin/?username=ahmednashatnoaman-svg&repo=career-copilot&theme=tokyonight&hide_border=true&bg_color=1A1B27&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5" alt="career-copilot" />
   </a>
   <a href="https://github.com/ahmednashatnoaman-svg/be-my-eye">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmednashatnoaman-svg&repo=be-my-eye&theme=tokyonight&hide_border=true&bg_color=1A1B27&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5" alt="be-my-eye" />
+    <img width="49%" src="https://github-stats-extended.vercel.app/api/pin/?username=ahmednashatnoaman-svg&repo=be-my-eye&theme=tokyonight&hide_border=true&bg_color=1A1B27&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5" alt="be-my-eye" />
   </a>
   <a href="https://github.com/ahmednashatnoaman-svg/clinical-rag-pipeline">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmednashatnoaman-svg&repo=clinical-rag-pipeline&theme=tokyonight&hide_border=true&bg_color=1A1B27&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5" alt="clinical-rag-pipeline" />
+    <img width="49%" src="https://github-stats-extended.vercel.app/api/pin/?username=ahmednashatnoaman-svg&repo=clinical-rag-pipeline&theme=tokyonight&hide_border=true&bg_color=1A1B27&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5" alt="clinical-rag-pipeline" />
   </a>
   <a href="https://github.com/ahmednashatnoaman-svg/supply-chain-forecasting">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmednashatnoaman-svg&repo=supply-chain-forecasting&theme=tokyonight&hide_border=true&bg_color=1A1B27&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5" alt="supply-chain-forecasting" />
+    <img width="49%" src="https://github-stats-extended.vercel.app/api/pin/?username=ahmednashatnoaman-svg&repo=supply-chain-forecasting&theme=tokyonight&hide_border=true&bg_color=1A1B27&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5" alt="supply-chain-forecasting" />
   </a>
 </div>
 
@@ -378,12 +420,6 @@ flowchart LR
   </picture>
 </div>
 
-### &nbsp;🧊&nbsp; Contributions in 3D
-
-<div align="center">
-  <img width="97%" src="https://raw.githubusercontent.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/main/profile-3d-contrib/profile-customize.svg" alt="3D contribution calendar" />
-</div>
-
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:7AA2F7,50:BB9AF7,100:7DCFFF&height=2&section=header" width="100%" alt="" />
 
 ## &nbsp;⚡&nbsp; Recent Activity
@@ -414,7 +450,7 @@ case behind a model.
 
 <!-- UPDATED:START -->
 <div align="center">
-  <sub>Rebuilt automatically · <b>18 August 2026, 00:30 UTC</b> · <a href="https://github.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/actions">view the pipeline</a></sub>
+  <sub>Rebuilt automatically · <b>18 August 2026, 00:34 UTC</b> · <a href="https://github.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/actions">view the pipeline</a></sub>
 </div>
 <!-- UPDATED:END -->
 
