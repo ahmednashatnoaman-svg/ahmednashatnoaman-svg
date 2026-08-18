@@ -170,14 +170,14 @@ School**, and MSc researcher at **Mansoura University**.
 
 <!-- LANGBAR:START -->
 ```text
-Jupyter / Notebooks    █████████░░░░░░░░░░░░░░░  38.53%
-Python                 ████████░░░░░░░░░░░░░░░░  34.74%
-TypeScript             ████░░░░░░░░░░░░░░░░░░░░  15.84%
-HTML                   █░░░░░░░░░░░░░░░░░░░░░░░   2.84%
-Dart                   █░░░░░░░░░░░░░░░░░░░░░░░   2.02%
+Jupyter / Notebooks    █████████░░░░░░░░░░░░░░░  38.44%
+Python                 ████████░░░░░░░░░░░░░░░░  34.90%
+TypeScript             ████░░░░░░░░░░░░░░░░░░░░  15.80%
+HTML                   █░░░░░░░░░░░░░░░░░░░░░░░   2.83%
+Dart                   █░░░░░░░░░░░░░░░░░░░░░░░   2.01%
 PLpgSQL                █░░░░░░░░░░░░░░░░░░░░░░░   1.69%
 JavaScript             █░░░░░░░░░░░░░░░░░░░░░░░   1.62%
-C++                    █░░░░░░░░░░░░░░░░░░░░░░░   0.72%
+C++                    █░░░░░░░░░░░░░░░░░░░░░░░   0.71%
 ```
 <!-- LANGBAR:END -->
 
@@ -394,7 +394,7 @@ case behind a model.
 
 <!-- UPDATED:START -->
 <div align="center">
-  <sub>Rebuilt automatically · <b>18 August 2026, 00:06 UTC</b> · <a href="https://github.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/actions">view the pipeline</a></sub>
+  <sub>Rebuilt automatically · <b>18 August 2026, 00:13 UTC</b> · <a href="https://github.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/actions">view the pipeline</a></sub>
 </div>
 <!-- UPDATED:END -->
 
