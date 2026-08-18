@@ -190,6 +190,7 @@ everything it renders is already covered by the stats cards, the trophy row and 
 | A stats card renders as a broken image | The free Vercel service is rate-limited | Transient; it recovers. The `LANGBAR` block is deliberately image-free so the page never looks empty. |
 | Snake image is missing | The `output` branch does not exist yet | Run the **Contribution Snake** workflow once from the Actions tab. |
 | 3D calendar missing | First pipeline run has not finished | Run **Profile Pipeline** from the Actions tab. |
+| 3D calendar 404s after changing `.github/profile-3d.json` | Supplying `SETTING_JSON` makes the action emit **only** `profile-customize.svg`, not the default `profile-*.svg` set | Keep the README pointed at `profile-3d-contrib/profile-customize.svg`. |
 | A generator runs green but commits nothing | `git add a b c` aborts and stages *nothing* when any one pathspec is missing | The commit step stages each path individually and emits `::warning::` for a missing output. Never collapse it back into one `git add`. |
 | A marker block goes empty | Marker comment was edited or deleted | Restore the exact `<!-- KEY:START -->` / `<!-- KEY:END -->` pair; the script logs `marker KEY not found`. |
 | Typing banner or streak card blank | Using a retired `*.herokuapp.com` host | Both moved to `*.demolab.com`. This repo already uses the current hosts. |
