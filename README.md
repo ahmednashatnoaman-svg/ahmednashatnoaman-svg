@@ -361,7 +361,7 @@ flowchart LR
 ### &nbsp;🧊&nbsp; Contributions in 3D
 
 <div align="center">
-  <img width="97%" src="https://raw.githubusercontent.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution calendar" />
+  <img width="97%" src="https://raw.githubusercontent.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/main/profile-3d-contrib/profile-customize.svg" alt="3D contribution calendar" />
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:7AA2F7,50:BB9AF7,100:7DCFFF&height=2&section=header" width="100%" alt="" />
