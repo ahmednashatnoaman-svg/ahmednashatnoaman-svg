@@ -1,0 +1,467 @@
+{
+  "$schema": "./profile.schema.json",
+  "identity": {
+    "username": "ahmednashatnoaman-svg",
+    "name": "Ahmed Nashat Noaman",
+    "headline": "AI & Machine Learning Engineer  |  MBA Global Management",
+    "location": "Cairo, Egypt",
+    "email": "ahmadnashat1999@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/ahmed-nashat1/",
+    "timezone": "Africa/Cairo",
+    "typing_lines": [
+      "AI %26 Machine Learning Engineer",
+      "Building RAG %26 Agentic AI Systems",
+      "Big Data on Spark, Kafka %26 Hadoop",
+      "MBA Global Management %7C MSc Mechanical Power",
+      "Turning Data into Business Strategy"
+    ]
+  },
+  "theme": {
+    "name": "Tokyo Night",
+    "bg": "1A1B27",
+    "surface": "24283B",
+    "border": "414868",
+    "text": "C0CAF5",
+    "muted": "565F89",
+    "primary": "7AA2F7",
+    "secondary": "BB9AF7",
+    "cyan": "7DCFFF",
+    "green": "9ECE6A",
+    "orange": "E0AF68",
+    "red": "F7768E",
+    "card_theme": "tokyonight"
+  },
+  "focus": {
+    "building": "Agentic AI and RAG systems for clinical decision support",
+    "learning": "LLM evaluation, MLOps on AWS, and distributed inference",
+    "collaborating_on": "Applied AI for healthcare, supply chain and accessibility",
+    "asking_about": "RAG pipelines, PySpark, LangGraph, forecasting, BIM",
+    "fun_fact": "I model heat transfer and multi-agent graphs with the same appetite"
+  },
+  "stack": [
+    {
+      "title": "Languages & Core",
+      "icon": "bracketsCurly",
+      "skillicons": [
+        "py",
+        "cpp",
+        "c",
+        "ts",
+        "js",
+        "bash",
+        "html",
+        "css"
+      ],
+      "badges": [
+        {
+          "label": "SQL",
+          "logo": "postgresql",
+          "color": "4169E1"
+        },
+        {
+          "label": "LaTeX",
+          "logo": "latex",
+          "color": "008080"
+        }
+      ]
+    },
+    {
+      "title": "AI · Machine Learning · Deep Learning",
+      "icon": "brain",
+      "skillicons": [
+        "pytorch",
+        "tensorflow",
+        "sklearn",
+        "opencv"
+      ],
+      "badges": [
+        {
+          "label": "Hugging Face",
+          "logo": "huggingface",
+          "color": "FFD21E",
+          "logoColor": "000000"
+        },
+        {
+          "label": "XGBoost",
+          "logo": "xgboost",
+          "color": "337AB7"
+        },
+        {
+          "label": "Keras",
+          "logo": "keras",
+          "color": "D00000"
+        },
+        {
+          "label": "Prophet",
+          "logo": "meta",
+          "color": "0467DF"
+        },
+        {
+          "label": "Optuna",
+          "logo": "optuna",
+          "color": "2B5B84"
+        }
+      ]
+    },
+    {
+      "title": "LLMs · GenAI · Agents",
+      "icon": "sparkles",
+      "skillicons": [],
+      "badges": [
+        {
+          "label": "OpenAI",
+          "logo": "openai",
+          "color": "412991"
+        },
+        {
+          "label": "Claude",
+          "logo": "anthropic",
+          "color": "D97757"
+        },
+        {
+          "label": "Gemini",
+          "logo": "googlegemini",
+          "color": "8E75B2"
+        },
+        {
+          "label": "LangChain",
+          "logo": "langchain",
+          "color": "1C3C3C"
+        },
+        {
+          "label": "LangGraph",
+          "logo": "langgraph",
+          "color": "1C3C3C"
+        },
+        {
+          "label": "Groq",
+          "logo": "groq",
+          "color": "F55036"
+        },
+        {
+          "label": "Qdrant",
+          "logo": "qdrant",
+          "color": "DC244C"
+        },
+        {
+          "label": "Ollama",
+          "logo": "ollama",
+          "color": "000000"
+        }
+      ]
+    },
+    {
+      "title": "Data Engineering & Big Data",
+      "icon": "database",
+      "skillicons": [
+        "postgres",
+        "mysql",
+        "mongodb",
+        "sqlite",
+        "redis"
+      ],
+      "badges": [
+        {
+          "label": "Apache Spark",
+          "logo": "apachespark",
+          "color": "E25A1C"
+        },
+        {
+          "label": "PySpark",
+          "logo": "apachespark",
+          "color": "E25A1C"
+        },
+        {
+          "label": "Hadoop",
+          "logo": "apachehadoop",
+          "color": "66CCFF",
+          "logoColor": "000000"
+        },
+        {
+          "label": "Kafka",
+          "logo": "apachekafka",
+          "color": "231F20"
+        },
+        {
+          "label": "Airflow",
+          "logo": "apacheairflow",
+          "color": "017CEE"
+        },
+        {
+          "label": "Pandas",
+          "logo": "pandas",
+          "color": "150458"
+        },
+        {
+          "label": "NumPy",
+          "logo": "numpy",
+          "color": "013243"
+        },
+        {
+          "label": "Power BI",
+          "logo": "powerbi",
+          "color": "F2C811",
+          "logoColor": "000000"
+        }
+      ]
+    },
+    {
+      "title": "Backend, MLOps & Cloud",
+      "icon": "cloud",
+      "skillicons": [
+        "fastapi",
+        "django",
+        "flask",
+        "docker",
+        "kubernetes",
+        "aws",
+        "linux",
+        "git",
+        "githubactions"
+      ],
+      "badges": [
+        {
+          "label": "Streamlit",
+          "logo": "streamlit",
+          "color": "FF4B4B"
+        },
+        {
+          "label": "Plotly Dash",
+          "logo": "plotly",
+          "color": "3F4F75"
+        },
+        {
+          "label": "MLflow",
+          "logo": "mlflow",
+          "color": "0194E2"
+        },
+        {
+          "label": "Weights %26 Biases",
+          "logo": "weightsandbiases",
+          "color": "FFBE00",
+          "logoColor": "000000"
+        },
+        {
+          "label": "Podman",
+          "logo": "podman",
+          "color": "892CA0"
+        }
+      ]
+    },
+    {
+      "title": "Engineering & Business",
+      "icon": "gear",
+      "skillicons": [
+        "figma",
+        "notion"
+      ],
+      "badges": [
+        {
+          "label": "Autodesk Revit",
+          "logo": "autodeskrevit",
+          "color": "0696D7"
+        },
+        {
+          "label": "Navisworks",
+          "logo": "autodesk",
+          "color": "0696D7"
+        },
+        {
+          "label": "BIM ISO 19650",
+          "logo": "buildkite",
+          "color": "14CC80",
+          "logoColor": "000000"
+        },
+        {
+          "label": "Agile %26 Scrum",
+          "logo": "jira",
+          "color": "0052CC"
+        },
+        {
+          "label": "PMP Prep",
+          "logo": "trello",
+          "color": "0079BF"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "credential": "MBA — Global Management",
+      "institution": "ESLSCA Paris Business School",
+      "period": "Sep 2024 — Present",
+      "logo": "googlescholar",
+      "badge_label": "MBA",
+      "badge_message": "Global Management"
+    },
+    {
+      "credential": "MSc — Mechanical Power Engineering  ·  GPA 3.88",
+      "institution": "Mansoura University",
+      "period": "Sep 2022 — Present",
+      "logo": "googlescholar",
+      "badge_label": "MSc",
+      "badge_message": "Mechanical Power Eng."
+    },
+    {
+      "credential": "AI & Machine Learning — 9-Month Professional Program",
+      "institution": "Information Technology Institute (ITI)",
+      "period": "Oct 2025 — Present",
+      "logo": "tensorflow",
+      "badge_label": "ITI",
+      "badge_message": "AI %26 Machine Learning"
+    },
+    {
+      "credential": "BSc — Mechanical Power Engineering  ·  Excellent with Honors (Rank 15)",
+      "institution": "Mansoura University",
+      "period": "Sep 2017 — Jul 2022",
+      "logo": "googlescholar",
+      "badge_label": "BSc",
+      "badge_message": "Honors · Rank 15"
+    }
+  ],
+  "certifications": [
+    {
+      "label": "U. of Tokyo",
+      "message": "Global Consumer Intelligence",
+      "logo": "googlescholar"
+    },
+    {
+      "label": "KAITECH",
+      "message": "MEP-BIM Diploma · 98%",
+      "logo": "autodeskrevit"
+    },
+    {
+      "label": "Egycham",
+      "message": "HR Management Diplomas",
+      "logo": "coursera"
+    },
+    {
+      "label": "BDI",
+      "message": "Business Development Pro",
+      "logo": "googleanalytics"
+    },
+    {
+      "label": "Engineering Tracks",
+      "message": "PMP Prep · FE Course",
+      "logo": "trello"
+    },
+    {
+      "label": "NTC",
+      "message": "Training of Trainers",
+      "logo": "leaderprice"
+    }
+  ],
+  "featured": {
+    "pinned": [
+      "career-copilot",
+      "be-my-eye",
+      "clinical-rag-pipeline",
+      "supply-chain-forecasting",
+      "rag-evaluation",
+      "Traffic-Sign-Recognition-Multiscale-CNN",
+      "ML2-document-clustering",
+      "bitcoin-forecasting-portal"
+    ],
+    "exclude": [
+      "ahmednashatnoaman-svg",
+      "lab2",
+      "git_lab1",
+      "teat",
+      "Python_F.P_ahmed_nashat_noaman",
+      "careflow-monorepo"
+    ],
+    "table_limit": 10,
+    "card_count": 4
+  },
+  "language_overrides": {
+    "Jupyter Notebook": "Jupyter / Notebooks"
+  },
+  "activity": {
+    "max_events": 6,
+    "owned_only": true,
+    "exclude_repos": [
+      "ahmednashatnoaman-svg/ahmednashatnoaman-svg"
+    ]
+  },
+  "repo_overrides": {
+    "Traffic-Sign-Recognition-Multiscale-CNN": {
+      "description": "PyTorch reimplementation of Sermanet & LeCun's multi-scale ConvNet for traffic sign recognition — 97.1% test accuracy on GTSRB.",
+      "topics": [
+        "pytorch",
+        "computer-vision",
+        "cnn"
+      ]
+    },
+    "BookFlow": {
+      "description": "Booking and scheduling platform built on a typed TypeScript stack.",
+      "topics": [
+        "typescript",
+        "fullstack"
+      ]
+    },
+    "nlp-mental-health-chatbot-2026": {
+      "description": "Conversational mental-health support agent — intent classification, safety routing and empathetic response generation.",
+      "topics": [
+        "nlp",
+        "llm",
+        "healthcare"
+      ]
+    },
+    "rag-evaluation": {
+      "topics": [
+        "rag",
+        "evaluation",
+        "retrieval"
+      ]
+    },
+    "career-copilot": {
+      "topics": [
+        "langgraph",
+        "multi-agent",
+        "fastapi"
+      ]
+    },
+    "be-my-eye": {
+      "topics": [
+        "accessibility",
+        "vision-llm",
+        "flutter"
+      ]
+    },
+    "clinical-rag-pipeline": {
+      "topics": [
+        "rag",
+        "qdrant",
+        "healthcare"
+      ]
+    },
+    "supply-chain-forecasting": {
+      "topics": [
+        "spark",
+        "kafka",
+        "forecasting"
+      ]
+    },
+    "ML2-document-clustering": {
+      "topics": [
+        "clustering",
+        "tf-idf",
+        "streamlit"
+      ]
+    },
+    "bitcoin-forecasting-portal": {
+      "topics": [
+        "time-series",
+        "streamlit",
+        "plotly"
+      ]
+    },
+    "Professional-Chess-Analytics-PowerBI": {
+      "topics": [
+        "power-bi",
+        "star-schema",
+        "analytics"
+      ]
+    }
+  }
+}
