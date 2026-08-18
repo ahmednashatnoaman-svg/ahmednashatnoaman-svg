@@ -2,9 +2,14 @@ name: Profile Pipeline
 
 # Every generator that writes to `main` lives in this one job on purpose.
 # Running them as separate workflows on the same cron makes them race for the
-# branch tip and two of the three fail with non-fast-forward rejections.
+# branch tip and the losers fail with non-fast-forward rejections.
 # One job, one commit, no races. The snake lives in snake.yml because it
 # targets the orphan `output` branch and can never collide with this.
+#
+# Third-party actions are pinned to immutable commit SHAs, not tags. A tag can
+# be repointed by whoever owns the repository; this job holds `contents: write`,
+# so a moved tag would be a direct path to committing arbitrary content here.
+# Dependabot (.github/dependabot.yml) proposes SHA bumps as reviewable PRs.
 
 on:
   push:
@@ -12,7 +17,6 @@ on:
     paths-ignore:
       - 'README.md'
       - 'profile-3d-contrib/**'
-      - 'assets/metrics.svg'
   schedule:
     - cron: '17 3 * * *'   # 03:17 UTC daily — off the hour to dodge the
   workflow_dispatch:        # stampede that rate-limits shared card services
@@ -32,10 +36,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.3.1
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065  # v5.6.0
         with:
           python-version: '3.12'
 
@@ -45,47 +49,34 @@ jobs:
         run: python scripts/sync_profile.py
 
       - name: Render 3D contribution calendar
-        uses: yoshi389111/github-profile-3d-contrib@0.7.1
-        continue-on-error: true
+        uses: yoshi389111/github-profile-3d-contrib@fd54cf20784ed9a86dc7be48bb5eb1f74e92b4f8  # 0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: .github/profile-3d.json
 
-      - name: Render deep-dive metrics
-        uses: lowlighter/metrics@latest
-        continue-on-error: true
-        with:
-          # A fine-grained PAT in METRICS_TOKEN unlocks private-contribution
-          # counts; without it the default token still renders public data.
-          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
-          user: ${{ github.repository_owner }}
-          filename: assets/metrics.svg
-          output_action: none      # this job owns the commit, not the action
-          config_timezone: Africa/Cairo
-          config_theme: dark
-          base: header, activity, community, repositories, metadata
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-          plugin_languages: yes
-          plugin_languages_details: percentage
-          plugin_languages_limit: 8
-          plugin_lines: yes
-          plugin_topics: yes
-          plugin_topics_mode: icons
-          plugin_achievements: yes
-          plugin_achievements_threshold: C
-
       - name: Commit regenerated assets
         run: |
+          set -euo pipefail
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md profile-3d-contrib assets/metrics.svg 2>/dev/null || true
+
+          # Stage paths one at a time. `git add a b c` aborts and stages
+          # NOTHING if any single pathspec is missing, which silently swallowed
+          # a good README rebuild the first time this ran.
+          for path in README.md profile-3d-contrib; do
+            if [ -e "$path" ]; then
+              git add -A -- "$path"
+            else
+              echo "::warning::expected output '$path' was not produced"
+            fi
+          done
+
           if git diff --staged --quiet; then
             echo "Nothing changed — profile is already current."
             exit 0
           fi
+
           git commit -m "chore(profile): rebuild dynamic sections [skip ci]"
-          # Another run may have landed while the generators were working.
           git pull --rebase --autostash origin main
           git push
