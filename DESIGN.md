@@ -236,5 +236,5 @@ just inserted.
 | 3D calendar missing | First pipeline run has not finished | Run **Profile Pipeline** from the Actions tab. |
 | 3D calendar 404s after changing `.github/profile-3d.json` | Supplying `SETTING_JSON` makes the action emit **only** `profile-customize.svg`, not the default `profile-*.svg` set | Keep the README pointed at `profile-3d-contrib/profile-customize.svg`. |
 | A generator runs green but commits nothing | `git add a b c` aborts and stages *nothing* when any one pathspec is missing | The commit step stages each path individually and emits `::warning::` for a missing output. Never collapse it back into one `git add`. |
-| A marker block goes empty | Marker comment was edited or deleted | Restore the exact `<!-- KEY:START -->` / `<!-- KEY:END -->` pair; the script logs `marker KEY not found`. |
+| Pipeline fails with `::error::marker X is missing` | A marker pair was deleted, usually by an edit that removed more of a section than intended | Restore the exact `<!-- X:START -->` / `<!-- X:END -->` pair. The script **exits 2** rather than warning, because a silently skipped marker means a whole block disappears from the profile and nobody notices. |
 | Typing banner or streak card blank | Using a retired `*.herokuapp.com` host | Both moved to `*.demolab.com`. This repo already uses the current hosts. |
