@@ -472,15 +472,19 @@ BUILDERS = {
 # --------------------------------------------------------------------------- #
 # Marker replacement
 # --------------------------------------------------------------------------- #
+MISSING: list[str] = []
+
+
 def splice(markdown: str, key: str, body: str) -> str:
     start, end = f"<!-- {key}:START -->", f"<!-- {key}:END -->"
     pattern = re.compile(
         re.escape(start) + r".*?" + re.escape(end), re.DOTALL
     )
     if not pattern.search(markdown):
-        print(f"  ! marker {key} not found in README.md", file=sys.stderr)
+        MISSING.append(key)
         return markdown
-    return pattern.sub(f"{start}\n{body}\n{end}", markdown)
+    # A literal backslash in the replacement would be read as a group escape.
+    return pattern.sub(lambda _: f"{start}\n{body}\n{end}", markdown)
 
 
 def main() -> int:
@@ -495,6 +499,16 @@ def main() -> int:
             print(f"  ✓ {key}")
         except Exception as exc:  # noqa: BLE001 - one bad block must not kill the run
             print(f"  ✗ {key}: {type(exc).__name__}: {exc}", file=sys.stderr)
+
+    if MISSING:
+        # A marker disappears when a section is edited carelessly. Silently
+        # skipping it means a whole block vanishes from the profile and nobody
+        # notices, so this is a hard failure rather than a warning.
+        for key in MISSING:
+            print(f"::error::marker {key}:START/{key}:END is missing from README.md",
+                  file=sys.stderr)
+        print(f"Aborting: {len(MISSING)} marker block(s) missing.", file=sys.stderr)
+        return 2
 
     if readme == original:
         print("README.md already current — nothing to write.")
