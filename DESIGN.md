@@ -145,8 +145,21 @@ The script has **no third-party dependencies** — stdlib `urllib` only — so C
 `pip install` step. It authenticates from `GITHUB_TOKEN`, falling back to your local
 `gh auth token` so a local run behaves like a CI run.
 
-It is **idempotent**: it compares rendered output against the current file and writes
-nothing when they match, so the nightly job produces no empty commits.
+It is **idempotent**, and that took care to get right. The `UPDATED` block renders the
+current clock, so if it were built alongside the others the output would differ on every
+single run and the "did anything change?" comparison could never return equal — the
+nightly job would commit a new timestamp every day forever. `UPDATED` is therefore
+excluded from `BUILDERS` and stamped **last, only after** a real content change is
+detected. Two consecutive runs on unchanged data write nothing at all.
+
+It **fails loudly** rather than degrading quietly:
+
+| Exit | Meaning |
+| :---: | :--- |
+| `0` | Written, or already current |
+| `1` | `--check` only: the file is stale |
+| `2` | A `KEY:START` / `KEY:END` marker pair is missing |
+| `3` | A block builder raised — stale content would otherwise have been left in place |
 
 ---
 
@@ -154,8 +167,14 @@ nothing when they match, so the nightly job produces no empty commits.
 
 | Workflow | Schedule | Writes to | Purpose |
 | :--- | :--- | :--- | :--- |
-| `profile.yml` | `03:17 UTC` daily | `main` | README sync |
+| `profile.yml` | `03:17 UTC` daily | `main` | Pin verification, then README sync |
 | `snake.yml` | `02:41 UTC` daily | `output` | Contribution snake, light and dark |
+
+`scripts/verify_pins.py` runs first in the pipeline and fails the build if any action is
+pinned to a mutable tag, or if the `# vX.Y.Z` comment beside a SHA no longer matches the
+tag that SHA actually carries. A stale comment is worse than no comment: it is the only
+thing a reviewer reads before approving a bump, and this repository shipped one
+(`checkout` labelled `v4.3.1` when the SHA was really `v4.4.0`) before the check existed.
 
 The two workflows write to different branches on purpose. Anything that commits to
 `main` belongs in `profile.yml` as a **single job producing a single commit** — two
