@@ -1,0 +1,14 @@
+# Actions are pinned to immutable commit SHAs for supply-chain safety, which
+# means they never update on their own. Dependabot re-opens that door safely:
+# it proposes SHA bumps as reviewable pull requests instead of trusting a tag.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    commit-message:
+      prefix: ci
+    labels:
+      - dependencies
