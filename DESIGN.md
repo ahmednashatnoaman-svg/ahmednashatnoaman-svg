@@ -89,9 +89,9 @@ rather than just moving.
 
 * **Centred spine.** Header, stats, tech, analytics and footer are centre-aligned.
   Prose sections are left-aligned. The alternation gives rhythm to a long scroll.
-* **Progressive disclosure.** The full project index and the deep-dive metrics live
-  inside `<details>`. A first-time visitor sees a curated page; a serious one can open
-  everything.
+* **Progressive disclosure.** Four curated repository cards sit above the fold; the
+  full project index lives inside a `<details>`. A first-time visitor sees a short
+  page, a serious one can open the whole inventory.
 * **Narrative order.** Who → what I use → what I write → what I've earned → what I've
   built → proof → how to reach me. Credentials come *before* projects because the
   hybrid MBA/MSc/AI background is the differentiator.
@@ -151,7 +151,7 @@ nothing when they match, so the nightly job produces no empty commits.
 
 | Workflow | Schedule | Writes to | Purpose |
 | :--- | :--- | :--- | :--- |
-| `profile.yml` | `03:17 UTC` daily | `main` | README sync, 3D calendar, metrics card |
+| `profile.yml` | `03:17 UTC` daily | `main` | README sync, 3D contribution calendar |
 | `snake.yml` | `02:41 UTC` daily | `output` | Contribution snake, light and dark |
 
 Every generator that touches `main` runs in a **single job producing a single commit**.
@@ -162,15 +162,24 @@ because it targets the orphan `output` branch, where it cannot collide.
 The cron times are deliberately off the hour: `github-readme-stats`, `capsule-render`
 and friends are shared free services that rate-limit hardest on the hour.
 
-### Optional: richer metrics
+### Supply-chain posture
 
-`lowlighter/metrics` renders public data with the default token. To include private
-contribution counts, create a fine-grained PAT and add it as a repository secret named
-`METRICS_TOKEN`. The workflow picks it up automatically:
+Every third-party action is pinned to an **immutable commit SHA**, not a tag:
 
 ```yaml
-token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b  # v3.5.0
 ```
+
+A tag is a mutable pointer that the action's owner can repoint at any time. Both
+workflows hold `contents: write` on this repository, so a moved tag would be a direct
+path to committing arbitrary content here. Pinning closes that, and
+`.github/dependabot.yml` re-opens the update path safely by proposing SHA bumps as
+reviewable pull requests.
+
+`lowlighter/metrics` was deliberately **not** adopted. It wants a personal access
+token, its `@latest` reference is a mutable branch rather than a release, and
+everything it renders is already covered by the stats cards, the trophy row and the
+`LANGBAR` block. The extra credential was not worth a duplicate visual.
 
 ---
 
@@ -181,5 +190,6 @@ token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
 | A stats card renders as a broken image | The free Vercel service is rate-limited | Transient; it recovers. The `LANGBAR` block is deliberately image-free so the page never looks empty. |
 | Snake image is missing | The `output` branch does not exist yet | Run the **Contribution Snake** workflow once from the Actions tab. |
 | 3D calendar missing | First pipeline run has not finished | Run **Profile Pipeline** from the Actions tab. |
+| A generator runs green but commits nothing | `git add a b c` aborts and stages *nothing* when any one pathspec is missing | The commit step stages each path individually and emits `::warning::` for a missing output. Never collapse it back into one `git add`. |
 | A marker block goes empty | Marker comment was edited or deleted | Restore the exact `<!-- KEY:START -->` / `<!-- KEY:END -->` pair; the script logs `marker KEY not found`. |
 | Typing banner or streak card blank | Using a retired `*.herokuapp.com` host | Both moved to `*.demolab.com`. This repo already uses the current hosts. |
