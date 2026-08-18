@@ -77,8 +77,12 @@ section rules.
 `7AA2F7 → BB9AF7 → 7DCFFF`. The same three stops as the header, so the eye reads
 them as the same system.
 
-**The architecture diagram** is Mermaid, rendered natively by GitHub — no image
-service involved, so it cannot 503. Each stage carries its own palette colour, and the
+**The two Mermaid diagrams** — the architecture flowchart and the career Gantt — are
+rendered natively by GitHub. No image service is involved, so they cannot 503, and
+they restyle themselves to the reader's theme. Every other visual on the page is
+someone else's uptime; these two are not.
+
+**The architecture diagram** is deliberately domain-neutral. Each stage carries its own palette colour, and the
 same colours key the table beneath it. It describes a *general* data-and-AI
 architecture on purpose: this is a public profile, not a portfolio for one domain.
 
@@ -150,13 +154,14 @@ nothing when they match, so the nightly job produces no empty commits.
 
 | Workflow | Schedule | Writes to | Purpose |
 | :--- | :--- | :--- | :--- |
-| `profile.yml` | `03:17 UTC` daily | `main` | README sync, 3D contribution calendar |
+| `profile.yml` | `03:17 UTC` daily | `main` | README sync |
 | `snake.yml` | `02:41 UTC` daily | `output` | Contribution snake, light and dark |
 
-Every generator that touches `main` runs in a **single job producing a single commit**.
-Splitting them into separate workflows on the same cron makes them race for the branch
-tip, and the losers fail with non-fast-forward rejections. The snake is separate only
-because it targets the orphan `output` branch, where it cannot collide.
+The two workflows write to different branches on purpose. Anything that commits to
+`main` belongs in `profile.yml` as a **single job producing a single commit** — two
+workflows on the same cron would race for the branch tip and the loser fails with a
+non-fast-forward rejection. The snake is separate only because it targets the orphan
+`output` branch, where it cannot collide.
 
 The cron times are deliberately off the hour: `github-readme-stats`, `capsule-render`
 and friends are shared free services that rate-limit hardest on the hour.
@@ -233,8 +238,6 @@ just inserted.
 | :--- | :--- | :--- |
 | A stats card renders as a broken image | The free Vercel service is rate-limited | Transient; it recovers. The `LANGBAR` block is deliberately image-free so the page never looks empty. |
 | Snake image is missing | The `output` branch does not exist yet | Run the **Contribution Snake** workflow once from the Actions tab. |
-| 3D calendar missing | First pipeline run has not finished | Run **Profile Pipeline** from the Actions tab. |
-| 3D calendar 404s after changing `.github/profile-3d.json` | Supplying `SETTING_JSON` makes the action emit **only** `profile-customize.svg`, not the default `profile-*.svg` set | Keep the README pointed at `profile-3d-contrib/profile-customize.svg`. |
 | A generator runs green but commits nothing | `git add a b c` aborts and stages *nothing* when any one pathspec is missing | The commit step stages each path individually and emits `::warning::` for a missing output. Never collapse it back into one `git add`. |
 | Pipeline fails with `::error::marker X is missing` | A marker pair was deleted, usually by an edit that removed more of a section than intended | Restore the exact `<!-- X:START -->` / `<!-- X:END -->` pair. The script **exits 2** rather than warning, because a silently skipped marker means a whole block disappears from the profile and nobody notices. |
 | Typing banner or streak card blank | Using a retired `*.herokuapp.com` host | Both moved to `*.demolab.com`. This repo already uses the current hosts. |
