@@ -173,9 +173,9 @@ Paris Business School**, and MSc researcher at **Mansoura University**.
 
 <!-- LANGBAR:START -->
 ```text
-Jupyter / Notebooks    █████████░░░░░░░░░░░░░░░  38.43%
-Python                 ████████░░░░░░░░░░░░░░░░  34.91%
-TypeScript             ████░░░░░░░░░░░░░░░░░░░░  15.80%
+Jupyter / Notebooks    █████████░░░░░░░░░░░░░░░  38.38%
+Python                 ████████░░░░░░░░░░░░░░░░  34.99%
+TypeScript             ████░░░░░░░░░░░░░░░░░░░░  15.78%
 HTML                   █░░░░░░░░░░░░░░░░░░░░░░░   2.83%
 Dart                   █░░░░░░░░░░░░░░░░░░░░░░░   2.01%
 PLpgSQL                █░░░░░░░░░░░░░░░░░░░░░░░   1.69%
@@ -450,7 +450,7 @@ case behind a model.
 
 <!-- UPDATED:START -->
 <div align="center">
-  <sub>Rebuilt automatically · <b>18 August 2026, 00:35 UTC</b> · <a href="https://github.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/actions">view the pipeline</a></sub>
+  <sub>Rebuilt automatically · <b>18 August 2026, 03:59 UTC</b> · <a href="https://github.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/actions">view the pipeline</a></sub>
 </div>
 <!-- UPDATED:END -->
 
