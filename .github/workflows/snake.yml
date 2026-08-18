@@ -1,7 +1,8 @@
 name: Contribution Snake
 
 # Writes only to the orphan `output` branch, so it never contends with the
-# Profile Pipeline for the tip of `main`.
+# Profile Pipeline for the tip of `main`. Actions are pinned to commit SHAs
+# because this job carries `contents: write`.
 
 on:
   schedule:
@@ -27,8 +28,7 @@ jobs:
 
     steps:
       - name: Build snake animation
-        uses: Platane/snk@v3
-        id: snake
+        uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b  # v3.5.0
         with:
           github_user_name: ${{ github.repository_owner }}
           # Two variants so the README <picture> element can serve the right
@@ -38,7 +38,7 @@ jobs:
             dist/snake-dark.svg?color_snake=#7AA2F7&color_dots=#1A1B27,#3d59a1,#7AA2F7,#BB9AF7,#7DCFFF
 
       - name: Publish to output branch
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865  # v4.2.0
         with:
           target_branch: output
           build_dir: dist
