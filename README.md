@@ -73,7 +73,7 @@ Paris Business School**, and MSc researcher at **Mansoura University**.
 
 <!-- STATS:START -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Public_Repos-16-24283B?style=for-the-badge&logo=github&logoColor=7AA2F7&labelColor=1A1B27" alt="Public Repos 16" />
+  <img src="https://img.shields.io/badge/Public_Repos-17-24283B?style=for-the-badge&logo=github&logoColor=7AA2F7&labelColor=1A1B27" alt="Public Repos 17" />
   <img src="https://img.shields.io/badge/Total_Stars-3-24283B?style=for-the-badge&logo=star&logoColor=E0AF68&labelColor=1A1B27" alt="Total Stars 3" />
   <img src="https://img.shields.io/badge/Followers-9-24283B?style=for-the-badge&logo=githubsponsors&logoColor=BB9AF7&labelColor=1A1B27" alt="Followers 9" />
   <img src="https://img.shields.io/badge/Forks-0-24283B?style=for-the-badge&logo=git&logoColor=7DCFFF&labelColor=1A1B27" alt="Forks 0" />
@@ -173,14 +173,14 @@ Paris Business School**, and MSc researcher at **Mansoura University**.
 
 <!-- LANGBAR:START -->
 ```text
-Jupyter / Notebooks    █████████░░░░░░░░░░░░░░░  38.38%
-Python                 ████████░░░░░░░░░░░░░░░░  34.99%
-TypeScript             ████░░░░░░░░░░░░░░░░░░░░  15.78%
-HTML                   █░░░░░░░░░░░░░░░░░░░░░░░   2.83%
-Dart                   █░░░░░░░░░░░░░░░░░░░░░░░   2.01%
-PLpgSQL                █░░░░░░░░░░░░░░░░░░░░░░░   1.69%
-JavaScript             █░░░░░░░░░░░░░░░░░░░░░░░   1.62%
-C++                    █░░░░░░░░░░░░░░░░░░░░░░░   0.71%
+Jupyter / Notebooks    █████████░░░░░░░░░░░░░░░  38.78%
+Python                 ████████░░░░░░░░░░░░░░░░  34.87%
+TypeScript             ████░░░░░░░░░░░░░░░░░░░░  15.61%
+HTML                   █░░░░░░░░░░░░░░░░░░░░░░░   2.80%
+Dart                   █░░░░░░░░░░░░░░░░░░░░░░░   1.99%
+PLpgSQL                █░░░░░░░░░░░░░░░░░░░░░░░   1.67%
+JavaScript             █░░░░░░░░░░░░░░░░░░░░░░░   1.60%
+C++                    █░░░░░░░░░░░░░░░░░░░░░░░   0.70%
 ```
 <!-- LANGBAR:END -->
 
@@ -425,6 +425,8 @@ flowchart LR
 ## &nbsp;⚡&nbsp; Recent Activity
 
 <!-- ACTIVITY:START -->
+- `18 Aug 2026` &nbsp; **pushed to** [clinical-grounded-generation](https://github.com/ahmednashatnoaman-svg/clinical-grounded-generation)
+- `18 Aug 2026` &nbsp; **created** branch [clinical-grounded-generation](https://github.com/ahmednashatnoaman-svg/clinical-grounded-generation)
 - `17 Aug 2026` &nbsp; **pushed to** [rag-evaluation](https://github.com/ahmednashatnoaman-svg/rag-evaluation)
 - `16 Aug 2026` &nbsp; **pushed to** [clinical-rag-pipeline](https://github.com/ahmednashatnoaman-svg/clinical-rag-pipeline)
 - `16 Aug 2026` &nbsp; **created** branch [clinical-rag-pipeline](https://github.com/ahmednashatnoaman-svg/clinical-rag-pipeline)
@@ -450,7 +452,7 @@ case behind a model.
 
 <!-- UPDATED:START -->
 <div align="center">
-  <sub>Rebuilt automatically · <b>18 August 2026, 03:59 UTC</b> · <a href="https://github.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/actions">view the pipeline</a></sub>
+  <sub>Rebuilt automatically · <b>19 August 2026, 04:00 UTC</b> · <a href="https://github.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/actions">view the pipeline</a></sub>
 </div>
 <!-- UPDATED:END -->
 
