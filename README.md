@@ -73,12 +73,12 @@ Paris Business School**, and MSc researcher at **Mansoura University**.
 
 <!-- STATS:START -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Public_Repos-17-24283B?style=for-the-badge&logo=github&logoColor=7AA2F7&labelColor=1A1B27" alt="Public Repos 17" />
+  <img src="https://img.shields.io/badge/Public_Repos-20-24283B?style=for-the-badge&logo=github&logoColor=7AA2F7&labelColor=1A1B27" alt="Public Repos 20" />
   <img src="https://img.shields.io/badge/Total_Stars-3-24283B?style=for-the-badge&logo=star&logoColor=E0AF68&labelColor=1A1B27" alt="Total Stars 3" />
   <img src="https://img.shields.io/badge/Followers-9-24283B?style=for-the-badge&logo=githubsponsors&logoColor=BB9AF7&labelColor=1A1B27" alt="Followers 9" />
   <img src="https://img.shields.io/badge/Forks-0-24283B?style=for-the-badge&logo=git&logoColor=7DCFFF&labelColor=1A1B27" alt="Forks 0" />
-  <img src="https://img.shields.io/badge/Languages-20-24283B?style=for-the-badge&logo=codeforces&logoColor=9ECE6A&labelColor=1A1B27" alt="Languages 20" />
-  <img src="https://img.shields.io/badge/Code_Shipped-3.5__MB-24283B?style=for-the-badge&logo=files&logoColor=F7768E&labelColor=1A1B27" alt="Code Shipped 3.5_MB" />
+  <img src="https://img.shields.io/badge/Languages-21-24283B?style=for-the-badge&logo=codeforces&logoColor=9ECE6A&labelColor=1A1B27" alt="Languages 21" />
+  <img src="https://img.shields.io/badge/Code_Shipped-4.9__MB-24283B?style=for-the-badge&logo=files&logoColor=F7768E&labelColor=1A1B27" alt="Code Shipped 4.9_MB" />
 </div>
 <!-- STATS:END -->
 
@@ -173,14 +173,14 @@ Paris Business School**, and MSc researcher at **Mansoura University**.
 
 <!-- LANGBAR:START -->
 ```text
-Jupyter / Notebooks    █████████░░░░░░░░░░░░░░░  38.78%
-Python                 ████████░░░░░░░░░░░░░░░░  34.87%
-TypeScript             ████░░░░░░░░░░░░░░░░░░░░  15.61%
-HTML                   █░░░░░░░░░░░░░░░░░░░░░░░   2.80%
-Dart                   █░░░░░░░░░░░░░░░░░░░░░░░   1.99%
-PLpgSQL                █░░░░░░░░░░░░░░░░░░░░░░░   1.67%
-JavaScript             █░░░░░░░░░░░░░░░░░░░░░░░   1.60%
-C++                    █░░░░░░░░░░░░░░░░░░░░░░░   0.70%
+Jupyter / Notebooks    ██████████░░░░░░░░░░░░░░  40.69%
+Python                 █████████░░░░░░░░░░░░░░░  37.34%
+TypeScript             ███░░░░░░░░░░░░░░░░░░░░░  12.00%
+HTML                   █░░░░░░░░░░░░░░░░░░░░░░░   2.74%
+JavaScript             █░░░░░░░░░░░░░░░░░░░░░░░   1.84%
+Dart                   █░░░░░░░░░░░░░░░░░░░░░░░   1.43%
+PLpgSQL                █░░░░░░░░░░░░░░░░░░░░░░░   1.20%
+CSS                    █░░░░░░░░░░░░░░░░░░░░░░░   1.18%
 ```
 <!-- LANGBAR:END -->
 
@@ -425,11 +425,12 @@ flowchart LR
 ## &nbsp;⚡&nbsp; Recent Activity
 
 <!-- ACTIVITY:START -->
+- `19 Aug 2026` &nbsp; **pushed to** [CareFlow-Medical-AI](https://github.com/ahmednashatnoaman-svg/CareFlow-Medical-AI)
+- `19 Aug 2026` &nbsp; **created** branch [CareFlow-Medical-AI](https://github.com/ahmednashatnoaman-svg/CareFlow-Medical-AI)
+- `19 Aug 2026` &nbsp; **created** branch [creativa-hackathon-RAG](https://github.com/ahmednashatnoaman-svg/creativa-hackathon-RAG)
+- `19 Aug 2026` &nbsp; **pushed to** [clinical-rag-safety-eval](https://github.com/ahmednashatnoaman-svg/clinical-rag-safety-eval)
+- `19 Aug 2026` &nbsp; **created** branch [clinical-rag-safety-eval](https://github.com/ahmednashatnoaman-svg/clinical-rag-safety-eval)
 - `18 Aug 2026` &nbsp; **pushed to** [clinical-grounded-generation](https://github.com/ahmednashatnoaman-svg/clinical-grounded-generation)
-- `18 Aug 2026` &nbsp; **created** branch [clinical-grounded-generation](https://github.com/ahmednashatnoaman-svg/clinical-grounded-generation)
-- `17 Aug 2026` &nbsp; **pushed to** [rag-evaluation](https://github.com/ahmednashatnoaman-svg/rag-evaluation)
-- `16 Aug 2026` &nbsp; **pushed to** [clinical-rag-pipeline](https://github.com/ahmednashatnoaman-svg/clinical-rag-pipeline)
-- `16 Aug 2026` &nbsp; **created** branch [clinical-rag-pipeline](https://github.com/ahmednashatnoaman-svg/clinical-rag-pipeline)
 <!-- ACTIVITY:END -->
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:7AA2F7,50:BB9AF7,100:7DCFFF&height=2&section=header" width="100%" alt="" />
@@ -452,7 +453,7 @@ case behind a model.
 
 <!-- UPDATED:START -->
 <div align="center">
-  <sub>Rebuilt automatically · <b>19 August 2026, 04:00 UTC</b> · <a href="https://github.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/actions">view the pipeline</a></sub>
+  <sub>Rebuilt automatically · <b>20 August 2026, 04:00 UTC</b> · <a href="https://github.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/actions">view the pipeline</a></sub>
 </div>
 <!-- UPDATED:END -->
 
