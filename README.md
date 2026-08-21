@@ -173,14 +173,14 @@ Paris Business School**, and MSc researcher at **Mansoura University**.
 
 <!-- LANGBAR:START -->
 ```text
-Jupyter / Notebooks    ██████████░░░░░░░░░░░░░░  40.69%
-Python                 █████████░░░░░░░░░░░░░░░  37.34%
-TypeScript             ███░░░░░░░░░░░░░░░░░░░░░  12.00%
-HTML                   █░░░░░░░░░░░░░░░░░░░░░░░   2.74%
-JavaScript             █░░░░░░░░░░░░░░░░░░░░░░░   1.84%
-Dart                   █░░░░░░░░░░░░░░░░░░░░░░░   1.43%
-PLpgSQL                █░░░░░░░░░░░░░░░░░░░░░░░   1.20%
-CSS                    █░░░░░░░░░░░░░░░░░░░░░░░   1.18%
+Jupyter / Notebooks    ██████████░░░░░░░░░░░░░░  40.15%
+Python                 █████████░░░░░░░░░░░░░░░  38.44%
+TypeScript             ███░░░░░░░░░░░░░░░░░░░░░  12.58%
+HTML                   █░░░░░░░░░░░░░░░░░░░░░░░   2.35%
+JavaScript             █░░░░░░░░░░░░░░░░░░░░░░░   1.49%
+Dart                   █░░░░░░░░░░░░░░░░░░░░░░░   1.41%
+PLpgSQL                █░░░░░░░░░░░░░░░░░░░░░░░   1.19%
+CSS                    █░░░░░░░░░░░░░░░░░░░░░░░   0.83%
 ```
 <!-- LANGBAR:END -->
 
@@ -425,7 +425,7 @@ flowchart LR
 ## &nbsp;⚡&nbsp; Recent Activity
 
 <!-- ACTIVITY:START -->
-- `19 Aug 2026` &nbsp; **pushed to** [CareFlow-Medical-AI](https://github.com/ahmednashatnoaman-svg/CareFlow-Medical-AI)
+- `20 Aug 2026` &nbsp; **pushed to** [CareFlow-Medical-AI](https://github.com/ahmednashatnoaman-svg/CareFlow-Medical-AI)
 - `19 Aug 2026` &nbsp; **created** branch [CareFlow-Medical-AI](https://github.com/ahmednashatnoaman-svg/CareFlow-Medical-AI)
 - `19 Aug 2026` &nbsp; **created** branch [creativa-hackathon-RAG](https://github.com/ahmednashatnoaman-svg/creativa-hackathon-RAG)
 - `19 Aug 2026` &nbsp; **pushed to** [clinical-rag-safety-eval](https://github.com/ahmednashatnoaman-svg/clinical-rag-safety-eval)
@@ -453,7 +453,7 @@ case behind a model.
 
 <!-- UPDATED:START -->
 <div align="center">
-  <sub>Rebuilt automatically · <b>20 August 2026, 04:00 UTC</b> · <a href="https://github.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/actions">view the pipeline</a></sub>
+  <sub>Rebuilt automatically · <b>21 August 2026, 04:03 UTC</b> · <a href="https://github.com/ahmednashatnoaman-svg/ahmednashatnoaman-svg/actions">view the pipeline</a></sub>
 </div>
 <!-- UPDATED:END -->
 
